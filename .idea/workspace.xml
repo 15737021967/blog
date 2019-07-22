@@ -2,416 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b22f2c-5cca-4146-acee-49e4827af266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/apps/blogsystem/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/apps/comment/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/apps/config/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/README.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/adminx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/layout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/de_DE/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/de_DE/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/de_DE/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/de_DE/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/en/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/en/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/en/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/es_MX/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/es_MX/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/es_MX/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/es_MX/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/eu/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/eu/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/id_ID/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/id_ID/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/id_ID/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/id_ID/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ja/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ja/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ja/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/lt/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/lt/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/lt/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/lt/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/nl_NL/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/nl_NL/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pl/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pl/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ru_RU/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ru_RU/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/migrations/0002_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/migrations/0003_auto_20160715_0100.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/aggregation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/ajax.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/batch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/bookmark.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/comments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/details.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/editable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/export.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/importexport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/inline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/language.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/layout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/mobile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/multiselect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/passwords.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/portal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/quickfilter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/quickform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/refresh.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/relate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/relfield.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/sitemenu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/sortablelist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/themes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/topnav.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/wizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/plugins/xversion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/sites.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/themes/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/themes/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/themes/bootstrap-xadmin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.page.dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.plugin.aggregation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.plugin.formset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.plugin.importexport.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.plugin.quickfilter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.widget.editable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/css/xadmin.widget.select-transfer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.page.dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.page.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.page.list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.batch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.bookmark.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.filters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.formset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.importexport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.portal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.quick-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.quickfilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.revision.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.sortablelist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.plugin.themes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.responsive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.widget.datetime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.widget.multiselect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.widget.select-transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/js/xadmin.widget.select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/autotype/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-image-gallery/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-modal/css/bootstrap-modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-modal/img/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modalmanager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/excanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/excanvas.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.colorhelpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.aggregate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.crosshair.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.errorbars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.fillbetween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.navigate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.pie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.resize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.selection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.stack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.symbol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.threshold.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/flot/jquery.flot.time.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/load-image/load-image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/load-image/load-image.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2-spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_pt-PT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_ua.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2_locale_zh-hans.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/select2/select2x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.legacy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/selectize/selectize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/snapjs/snap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/snapjs/snap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/static/xadmin/vendor/snapjs/snap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/password_reset/complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/password_reset/confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/password_reset/done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/password_reset/email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/password_reset/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/user/add_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/auth/user/change_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/base_site.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/comm.top.setlang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/comm.top.theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/comm.top.topnav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/modal_list.left_navbar.quickfilter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_form.before_fieldsets.wizard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_form.submit_line.wizard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.nav_form.search_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.nav_menu.bookmarks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.nav_menu.filters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.results_bottom.actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.results_top.charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.results_top.date_hierarchy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.exports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.importexport.export.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.importexport.import.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.layouts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.refresh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/blocks/model_list.top_toolbar.saveorder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/accordion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/one.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/stacked.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/edit_inline/tabular.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/char.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/checklist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/date.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/fk_search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/number.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/quickfilter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/filters/rel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/forms/transfer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/grids/thumbnails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/import_export/export_action.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/import_export/import.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/box.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/sitemenu_accordion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/sitemenu_default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/submit_line.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/toggle_back.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/includes/toggle_menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/layout/field_value.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/layout/field_value_td.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/layout/fieldset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/layout/input_group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/layout/td-field.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/app_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/batch_change_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/invalid_setup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/logged_out.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_delete_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_delete_selected_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/model_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/quick_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/quick_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/recover_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/recover_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/revision_diff.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/views/revision_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/widgets/addform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/widgets/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/widgets/chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/widgets/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/widgets/qbutton.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templatetags/xadmin_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/vendors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/detail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/edit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/website.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/widgets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/not-zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/requires.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin2.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_blog/web_blog/userforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/blog/adminforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/blog/adminforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/blog/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/blog/adminx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/blogsystem/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/blogsystem/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/comment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/comment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/apps/config/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/apps/config/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/static/js/post_editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/static/js/post_editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/web_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/web_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/web_blog/userforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/userforms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/web_blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -436,6 +31,17 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
@@ -444,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_blog/web_blog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="610">
+              <caret line="25" column="64" lean-forward="true" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
               <folding>
                 <element signature="e#632#664#0" expanded="true" />
               </folding>
@@ -456,10 +62,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_blog/web_blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state>
+              <caret column="41" selection-start-column="41" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/contrib/auth/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="309" column="61" lean-forward="true" selection-start-line="309" selection-start-column="61" selection-end-line="309" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://2a37da0f-80da-4b08-81f2-2b4d84028520/schema/main/table/auth_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_blog/apps/user/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -467,44 +100,36 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_blog/web_blog/userforms.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web_blog/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="425">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#84#93#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html">
+        <entry file="file://$PROJECT_DIR$/web_blog/apps/blog/adminforms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="760">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/index.html">
+        <entry file="file://$PROJECT_DIR$/web_blog/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="325">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="e#84#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -543,13 +168,13 @@
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/index.html" />
         <option value="$PROJECT_DIR$/web_blog/apps/blog/models.py" />
         <option value="$PROJECT_DIR$/web_blog/apps/config/models.py" />
-        <option value="$PROJECT_DIR$/web_blog/apps/user/models.py" />
         <option value="$PROJECT_DIR$/web_blog/web_blog/settings/base.py" />
         <option value="$PROJECT_DIR$/web_blog/apps/comment/models.py" />
         <option value="$PROJECT_DIR$/web_blog/web_blog/urls.py" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html" />
-        <option value="$PROJECT_DIR$/web_blog/web_blog/views.py" />
         <option value="$PROJECT_DIR$/web_blog/web_blog/userforms.py" />
+        <option value="$PROJECT_DIR$/web_blog/apps/user/models.py" />
+        <option value="$PROJECT_DIR$/web_blog/web_blog/views.py" />
       </list>
     </option>
   </component>
@@ -574,6 +199,56 @@
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -586,7 +261,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -628,7 +303,7 @@
       <workItem from="1563758424393" duration="6989000" />
       <workItem from="1563779684945" duration="2945000" />
       <workItem from="1563784503028" duration="829000" />
-      <workItem from="1563785363380" duration="372000" />
+      <workItem from="1563785363380" duration="10630000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <created>1563616118350</created>
@@ -637,11 +312,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563616118350</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="注册模块初始化">
+      <created>1563785824895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563785824895</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13994000" />
+    <option name="totallyTimeSpent" value="24252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
@@ -649,7 +331,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.11804452" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.11804452" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32938188" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -658,17 +340,17 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49959415" weight="0.32964224" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49835932" weight="0.33475298" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49835932" visible="true" weight="0.33436534" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50082034" side_tool="true" weight="0.32964224" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32938188" />
-      <window_info anchor="bottom" id="Database Console" order="11" sideWeight="0.49917966" visible="true" weight="0.33710802" />
+      <window_info anchor="bottom" id="Database Console" order="11" sideWeight="0.49917966" weight="0.3366873" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.28139904" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.28139904" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266612" />
@@ -700,38 +382,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化提交" />
+    <MESSAGE value="注册模块初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册模块初始化" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/config/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/blog/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/js/post_editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/settings.py" />
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/apps.py" />
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/blog/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/web_blog/settings/develop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -754,13 +408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -811,16 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/blog/adminforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -906,16 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/apps/user/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/apps/comment/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -935,29 +562,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../blog-env/lib/python3.7/site-packages/django/views/generic/base.py" />
     <entry file="das://ddd8f765-a14a-4a2b-bda3-793837a9acd8/schema/main/table/auth_user" />
-    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/userforms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -965,10 +569,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html">
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/fields.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="278">
+          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="631" selection-start-line="631" selection-end-line="631" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="25" column="64" lean-forward="true" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding>
+            <element signature="e#632#664#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -979,13 +612,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blogsystem/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="325">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
             <element signature="e#84#93#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/apps/blog/adminforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/userforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/apps/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2a37da0f-80da-4b08-81f2-2b4d84028520/schema/main/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="309" column="61" lean-forward="true" selection-start-line="309" selection-start-column="61" selection-end-line="309" selection-end-column="61" />
         </state>
       </provider>
     </entry>

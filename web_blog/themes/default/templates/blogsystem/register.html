@@ -7,8 +7,9 @@
 </head>
 <body>
     <form action="{% url 'register' %}" method="post">
-        <input name="id" type="text" id="zhanghao" placeholder="请输入账号">
-        <input name="pwd" type="password" id="mima" placeholder="请输入密码">
+        {% for field in user %}
+            {{ field.label_tag }}{{ field }}{{ field.errors }}
+        {% endfor %}
         <input type="submit" value="提交">
         {% csrf_token %}
     </form>

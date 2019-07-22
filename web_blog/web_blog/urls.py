@@ -23,5 +23,5 @@ urlpatterns = [
     path(r'xadmin/', xadmin.site.urls, name="xadmin"),
     path(r'ckeditor/', include('ckeditor_uploader.urls')),
     re_path(r'^$', views.index, name="index"),
-    path(r'register.html', views.Register.as_view(), name="register")
+    path(r'register', views.Register.as_view(), name="register")
 ]
