@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+    <form action="{% url 'register' %}" method="post">
+        <input name="id" type="text" id="zhanghao" placeholder="请输入账号">
+        <input name="pwd" type="password" id="mima" placeholder="请输入密码">
+        <input type="submit" value="提交">
+        {% csrf_token %}
+    </form>
+</body>
+</html>

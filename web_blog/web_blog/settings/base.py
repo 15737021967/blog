@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'apps.config',
     'apps.comment',
     'apps.blogsystem',
+    'apps.user',
     'xadmin',
+    'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
 
@@ -58,10 +60,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'web_blog.urls'
 
+THEME = 'default'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'themes', THEME, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

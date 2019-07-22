@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class ProjectCategory(models.Model):
     STATUS_NORMAL = 1
     STATUS_DELETE = 0
@@ -14,3 +15,10 @@ class ProjectCategory(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = "系统分类"
+
+    def __str__(self):
+        return self.name
+
+    @classmethod
+    def get_pro_category(cls):
+        return cls.objects.filter(status=cls.STATUS_NORMAL)

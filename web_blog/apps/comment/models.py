@@ -11,11 +11,12 @@ class Comment(models.Model):
         (STATUS_NORMAL, '正常'),
         (STATUS_DELETE, '删除'),
     )
-    reply = models.ForeignKey(User, verbose_name="回复者", on_delete=models.CASCADE, related_name="replyer",
+    parent = models.ForeignKey('self', verbose_name="回复评论", null=True, on_delete=models.CASCADE)
+    reply = models.ForeignKey(User, verbose_name="回复者", on_delete=models.SET_NULL, null=True, related_name="replyer",
                               related_query_name="replyer")
-    reply_to = models.ForeignKey(User, null=True, verbose_name="回复用户", on_delete=models.CASCADE,
+    reply_to = models.ForeignKey(User, verbose_name="回复用户", on_delete=models.SET_NULL, null=True,
                                  related_name="replyto", related_query_name="replyto")
-    reply_to_blog = models.ForeignKey(Post, null=True, verbose_name="回复博文", on_delete=models.CASCADE)
+    reply_to_blog = models.ForeignKey(Post, verbose_name="回复博文", on_delete=models.CASCADE)
     content = models.CharField(max_length=2000, verbose_name="内容")
     status = models.PositiveIntegerField(default=STATUS_NORMAL, choices=STATUS_ITEMS, verbose_name="状态")
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")

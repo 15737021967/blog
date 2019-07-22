@@ -8,8 +8,8 @@ import xadmin
 @xadmin.sites.register(Category)
 class CategoryAdmin(BaseOwnerAdmin):
 
-    list_display = ('name', 'status', 'is_nav', 'created_time', 'post_count', 'owner')
-    list_fields = ('name', 'status', 'is_nav')
+    list_display = ('name', 'status', 'is_nav', 'created_time', 'post_count', 'owner', )
+    list_fields = ('name', 'status', 'is_nav', )
 
     def post_count(self, obj):
         return obj.post_set.count()
@@ -48,7 +48,7 @@ class PostAdmin(BaseOwnerAdmin):
         Fieldset(
             '基础配置',
             Row('title', 'category'),
-            'status',
+            Row('pro_category', 'status', ),
             'tag',
         ),
         Fieldset(
