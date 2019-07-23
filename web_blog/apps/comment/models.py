@@ -26,7 +26,7 @@ class Comment(models.Model):
 
     @classmethod
     def get_by_reply_to_blog(cls, blog_id):
-        return cls.objects.filter(blog_id=blog_id, status=cls.STATUS_NORMAL)
+        return cls.objects.filter(reply_to_blog_id=blog_id, status=cls.STATUS_NORMAL)
 
     @property
     def get_children_comment(self):

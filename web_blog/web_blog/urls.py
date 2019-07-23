@@ -15,13 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
+from .views import index, Register, Active, Login, EditUserInfo
 import xadmin
-from . import views
 
 urlpatterns = [
+    re_path(r'^$', index, name="index"),
     path(r'admin/', admin.site.urls),
     path(r'xadmin/', xadmin.site.urls, name="xadmin"),
     path(r'ckeditor/', include('ckeditor_uploader.urls')),
-    re_path(r'^$', views.index, name="index"),
-    path(r'register', views.Register.as_view(), name="register")
+    path(r'register', Register.as_view(), name="register"),
+    path(r'active/<str:code>', Active.as_view(), name="active"),
+    path(r'login/', Login.as_view(), name="login"),
+    path(r'editinfo/', EditUserInfo.as_view(), name="edit_info"),
+    path(r'blog/', include('apps.blog.urls')),
 ]

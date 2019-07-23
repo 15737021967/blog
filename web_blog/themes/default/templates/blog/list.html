@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示页面</title>
+</head>
+<body>
+    {% for post in post_list %}
+        {{ post.title }}{{ post.category.name }}
+    {% endfor %}
+
+</body>
+</html>

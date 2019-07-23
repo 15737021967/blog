@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'apps.blog',
     'apps.config',
     'apps.comment',
-    'apps.blogsystem',
+    'apps.blog_system',
     'apps.user',
     'xadmin',
     'crispy_forms',
@@ -127,36 +127,3 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-
-STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-# 文件上传的路径
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-
-CKEDITOR_UPLOAD_PATH = "article_images"
-# 设置编辑框的参数
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'full',
-        'height': 300,
-        'width': 800,
-        'tabSpaces': 4,
-        'extraPlugins': 'codesnippet',  # 配置代码插件
-    }
-}
-
-# 文件存储方式
-DEFAULT_FILE_STORAGE = 'web_blog.storage.WatermarkStorage'
-
-# #接口的分页设置
-# REST_FRAMEWORK = {
-#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-#     'PAGE_SIZE': 2,
-# }

@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
-from apps.blogsystem.models import ProjectCategory
+from apps.blog_system.models import ProjectCategory
 import mistune
 # from django.utils.functional import cached_property
 # Create your models here.
@@ -20,6 +20,8 @@ class Category(models.Model):
     owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.SET_NULL, null=True)
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
+    objects = models.Manager()
+
     class Meta:
         verbose_name = verbose_name_plural = "个人分类"
 
@@ -27,9 +29,9 @@ class Category(models.Model):
         return self.name
 
     @classmethod
-    def get_navs(cls):
+    def get_navs(cls, auth_obj):
         """是获取设为导航和正常的分类"""
-        categories = cls.objects.filter(status=cls.STATUS_NORMAL)
+        categories = cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj)
         nav_categories = []
         normal_categories = []
         for cate in categories:
@@ -61,6 +63,8 @@ class Tag(models.Model):
     owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.SET_NULL, null=True)
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
+    objects = models.Manager()
+
     class Meta:
         verbose_name = verbose_name_plural = "标签"
 
@@ -91,6 +95,8 @@ class Post(models.Model):
     content_html = models.TextField(verbose_name="正文html代码", blank=True, editable=False)
     is_md = models.BooleanField(default=False, verbose_name="markdown语法")
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+
+    objects = models.Manager()
 
     class Meta:
         verbose_name = verbose_name_plural = "文章"
@@ -124,10 +130,10 @@ class Post(models.Model):
         return post_list, category
 
     @classmethod
-    def latest_posts(cls, with_related=True):
-        queryset = cls.objects.filter(status=cls.STATUS_NORMAL)
+    def latest_posts(cls, auth_obj, with_related=True):
+        queryset = cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj)
         if with_related:
-            queryset = queryset.select_related('owner', 'category')
+            queryset = queryset.select_related('category')
         return queryset
 
     @classmethod

@@ -1,4 +1,5 @@
 from xadmin.layout import Row, Fieldset
+from xadmin import views
 from web_blog.base_admin import BaseOwnerAdmin
 from .models import Post, Category, Tag
 from .adminforms import PostAdminForm
@@ -60,3 +61,16 @@ class PostAdmin(BaseOwnerAdmin):
             'content',
         )
     )
+
+
+@xadmin.sites.register(views.BaseAdminView)
+class BaseSetting(object):
+    enable_themes = True  # 开启主题功能，默认为False
+    use_bootswatch = True  # 开启使用bootstrap样式功能
+
+
+@xadmin.sites.register(views.CommAdminView)
+class GlobalSetting(object):
+    site_title = "PDBG"  # 左上角的标题
+    site_footer = "PDBG"  # 底部标题
+    menu_style = "accordion"  # 将同一个APP中的models合并
