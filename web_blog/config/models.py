@@ -64,35 +64,46 @@ class SideBar(models.Model):
     @property
     def content_html(self):
         """ 直接渲染模板 """
-        from blog import Post, Category
+        from blog.models import Post, Category
         from comment.models import Comment
 
         result = ''
         if self.display_type == self.DISPLAY_HTML:
             result = self.content
         elif self.display_type == self.DISPLAY_LATEST:
+            posts = Post.latest_posts(self.owner, with_related=False)
+            if len(posts) > 5:
+                posts = posts[:5]
             content = {
-                'posts': Post.latest_posts(with_related=False)
+                'posts': posts
             }
-            result = render_to_string('config/blocks/sidebar_posts.html', content)
+            result = render_to_string('config/sidebar_posts.html', content)
         elif self.display_type == self.DISPLAY_HOT:
+            posts = Post.hot_posts(self.owner)
+            if len(posts) > 5:
+                posts = posts[:5]
             content = {
-                'posts': Post.hot_posts()
+                'posts': posts
             }
-            result = render_to_string('config/blocks/sidebar_posts.html', content)
+            result = render_to_string('config/sidebar_posts.html', content)
         elif self.display_type == self.DISPLAY_COMMENT:
+            comments = Comment.objects.filter(
+                reply_to_blog__in=Post.objects.filter(owner=self.owner)
+            ).order_by('-created_time')
+            if len(comments) > 5:
+                comments = comments[:5]
             content = {
-                'comments': Comment.objects.filter(status=Comment.STATUS_NORMAL)
+                'comments': comments
             }
-            result = render_to_string('config/blocks/sidebar_comments.html', content)
+            result = render_to_string('config/sidebar_comments.html', content)
         elif self.display_type == self.DISPLAY_CATEGORY:
             content = {
-                'category': Category.get_categories()
+                'categories': Category.get_categories(self.owner)
             }
-            result = render_to_string('', content)
-        elif self.display_type == self.DISPLAY_INTERFILE:
-            content = {
-
-            }
-            result = render_to_string('', content)
+            result = render_to_string('config/sidebar_category.html', content)
+        # elif self.display_type == self.DISPLAY_INTERFILE:
+        #     content = {
+        #
+        #     }
+        #     result = render_to_string('', content)
         return result

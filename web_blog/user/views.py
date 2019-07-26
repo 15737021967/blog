@@ -48,7 +48,7 @@ class Register(View):
 class Login(View):
     """登陆模块"""
     def get(self, request):
-        next_url = request.GET.get('next', None)
+        next_url = request.GET.get('next', '')
         print(next_url)
         return render(request, 'blog_system/login.html', context={'login_form': LoginForms(), 'next': next_url})
 
@@ -57,10 +57,9 @@ class Login(View):
         if login_form.is_valid():
             login(request, authenticate(username=login_form.cleaned_data.get('account'),
                                         password=login_form.cleaned_data.get('password')))
-            next_url = request.POST.get('next', None)
+            next_url = request.POST.get('next', '')
             print(next_url)
-            if next_url:
-                print(1)
+            if len(next_url) > 0:
                 return redirect(next_url)
             return redirect(reverse("index"))
         else:

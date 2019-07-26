@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.db.models import Count
 from blog_system.models import ProjectCategory
 import mistune
 # from django.utils.functional import cached_property
@@ -46,8 +47,8 @@ class Category(models.Model):
         }
 
     @classmethod
-    def get_categories(cls):
-        return cls.objects.filter(status=cls.STATUS_NORMAL)
+    def get_categories(cls, auth_obj):
+        return cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj).annotate(post_count=Count('post'))
 
 
 class Tag(models.Model):
@@ -137,8 +138,8 @@ class Post(models.Model):
         return queryset
 
     @classmethod
-    def hot_posts(cls):
-        return cls.objects.filter(status=cls.STATUS_NORMAL).order_by('-uv')
+    def hot_posts(cls, auth_obj):
+        return cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj).order_by('-uv')
 
     def save(self, *args, **kwargs):
         if self.is_md:

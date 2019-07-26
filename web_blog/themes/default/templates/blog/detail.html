@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>详情页面</title>
-</head>
-<body>
+{% extends "blog/base.html" %}
+{% load comment_block %}
+{% block main %}
     {{ post.content }}
-    {{ comment_form }}
-    {% for comment in comment_list %}
-            <li class="list-group-item">
-                <div class="nickname">
-                        <span>{{ comment.created_time }}</span>
-                </div>
-            <div class="comment-content">
-                {% autoescape off %}
-                {{ comment.content }}
-                {% endautoescape %}
-            </div>
-            </li>
-    {% endfor %}
-</body>
-</html>
+    <hr>
+    {% comment_block post.id %}
+{% endblock %}
+

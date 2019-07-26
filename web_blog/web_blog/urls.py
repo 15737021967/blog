@@ -29,5 +29,7 @@ urlpatterns = [
     path(r'logout/', Logout.as_view(), name="logout"),
     path(r'edit_info/', EditUserInfo.as_view(), name="edit_info"),
     path(r'<str:auth>/', include('blog.urls')),
-    path(r'nav/', include('blog_system.urls'))
+    path(r'nav/', include('blog_system.urls')),
+    path(r'comment/', include('comment.urls')),
+
 ]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <hr>
+    <div class="comment">
+        <form class="form-group" action="{% url 'comment:comment' %}" method="POST">
+            {% csrf_token %}
+            {{ comment_form }}
+            <input type="submit" value="提交">
+        </form>
+
+        <!--评论列表-->
+        <ul class="list-group">
+            {% for comment in comment_list %}
+            <li class="list-group-item">
+                <div class="nickname">
+                    {{ comment.reply.userinfo }}:{% autoescape off %}{{ comment.content }}{% endautoescape %}
+                    <span>{{ comment.created_time }}</span>
+                </div>
+            </li>
+                {{ comment.get_children_comment }}
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

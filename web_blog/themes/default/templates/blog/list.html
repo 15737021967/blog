@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>展示页面</title>
-</head>
-<body>
+{% extends "blog/base.html" %}
+{% block main %}
     {% for post in post_list %}
         {{ post.title }}{{ post.category.name }}
     {% endfor %}
@@ -15,8 +10,6 @@
     {% for cate in navs %}
         {{ cate.name }}
     {% endfor %}
+{% endblock %}
 
 
-
-</body>
-</html>

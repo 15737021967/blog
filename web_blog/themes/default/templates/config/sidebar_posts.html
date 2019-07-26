@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <ul>
+        {% for post in posts %}
+            <li><a href="/blog/post/{{ post.id }}.html">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

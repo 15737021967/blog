@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block main %}
+    {% endblock %}
+                    {% for sidebar in sidebars %}
+                        <div class="card sidebar">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ sidebar.title }}</h4>
+                                <p>{{ sidebar.content_html }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+</body>
+</html>
