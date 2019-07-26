@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
-from .views import index, Register, Active, Login, EditUserInfo
+from user.views import index, Register, Active, Login, EditUserInfo, Logout
 import xadmin
 
 urlpatterns = [
@@ -26,6 +26,8 @@ urlpatterns = [
     path(r'register', Register.as_view(), name="register"),
     path(r'active/<str:code>', Active.as_view(), name="active"),
     path(r'login/', Login.as_view(), name="login"),
-    path(r'editinfo/', EditUserInfo.as_view(), name="edit_info"),
-    path(r'blog/', include('apps.blog.urls')),
+    path(r'logout/', Logout.as_view(), name="logout"),
+    path(r'edit_info/', EditUserInfo.as_view(), name="edit_info"),
+    path(r'<str:auth>/', include('blog.urls')),
+    path(r'nav/', include('blog_system.urls'))
 ]

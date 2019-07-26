@@ -8,6 +8,15 @@
     {% for post in post_list %}
         {{ post.title }}{{ post.category.name }}
     {% endfor %}
+    {% for sidebar in Sidebars %}
+        {{ sidebar.title }}
+        {{ sidebar.content_html }}
+    {% endfor %}
+    {% for cate in navs %}
+        {{ cate.name }}
+    {% endfor %}
+
+
 
 </body>
 </html>

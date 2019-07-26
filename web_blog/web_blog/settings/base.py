@@ -36,11 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.blog',
-    'apps.config',
-    'apps.comment',
-    'apps.blog_system',
-    'apps.user',
+    'blog.apps.BlogConfig',
+    'config.apps.ConfigConfig',
+    'comment.apps.CommentConfig',
+    'blog_system.apps.BlogsystemConfig',
+    'user.apps.UserConfig',
     'xadmin',
     'crispy_forms',
     'ckeditor',
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'blog.middleware.user_id.UserIDMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'web_blog.urls'
