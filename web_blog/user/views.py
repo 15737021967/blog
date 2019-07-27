@@ -14,9 +14,14 @@ from blog.models import Post
 
 def index(request):
     """网站的主页"""
-    pro_category = ProjectCategory.get_pro_category()
+    pro_category_list = ProjectCategory.get_pro_category()
     post_list = Post.objects.filter(pro_category=1)
-    return render(request, 'blog_system/index.html', context={'pro_category': pro_category, 'post_list': post_list})
+    pro_category = get_object_or_404(ProjectCategory, id=1)
+    return render(request, 'blog_system/index.html',
+                  context={
+                      'pro_category_list': pro_category_list, 'post_list': post_list, 'pro_category': pro_category
+                    }
+                  )
 
 
 class Register(View):

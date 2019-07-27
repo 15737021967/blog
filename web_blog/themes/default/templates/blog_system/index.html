@@ -1,29 +1,109 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if pro_category.id == 1 %}PDBG-专业IT技术社区{% else %}{{ pro_category.name }}-PDBG{% endif %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <style>
+        a {
+            color: #0f0f0f;
+        }
+        a:hover{
+            text-decoration: none;
+            color: red;
+        }
+        .area{
+            padding: 4px;
+        }
+        .head_area{
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
-<body>
-    <a href="{% url 'index' %}">首页</a>
-    <a href="{% url 'edit_info' %}">个人中心</a>
-    {% for cate in pro_category %}
-        {% if forloop.counter == 1 %}
-            <a href="{% url 'index' %}">{{ cate.name }}</a>
-        {% else %}
-            <a href="{% url 'blog_system:index' cate.id %}">{{ cate.name }}</a>
-        {% endif %}
-    {% endfor %}
-    {% for post in post_list %}
-        {{ post.title }}
-        {{ post.desc }}
-        {{ post.owner.userinfo }}
-        {{ post.created_time }}
-        <a href="{% url 'post:post-detail' post.owner.userinfo post.id %}">详情</a>
-    {% endfor %}
-    {% if user.is_authenticated %}
-        <a href="{% url 'logout' %}">注销</a>
-    {% endif %}
+<body style="background-color: whitesmoke">
+    <nav class="navbar navbar-default head_area" style="background-color: white">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="navbar-brand" href="{% url 'index' %}">首页</a></li>
+                </ul>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">信息<span class="sr-only">(current)</span></a></li>
+                </ul>
+                <form class="navbar-form navbar-left form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    {% if user.is_authenticated %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'edit_info' %}">个人中心</a></li>
+                                <li><a href="{% url 'post:post-list' user.userinfo.name %}">我的博客</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{% url 'logout' %}">注销</a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">登陆</a></li>
+                        <li><a href="{% url 'register' %}">注册</a></li>
+                    {% endif %}
 
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-2 area">
+            <ul class="list-group">
+                {% for cate in pro_category_list %}
+                    {% if forloop.counter == 1 %}
+                        <li class="list-group-item" id="pro_cate{{ cate.id }}"><a href="{% url 'index' %}">{{ cate.name }}</a></li>
+                    {% else %}
+                        <li class="list-group-item" id="pro_cate{{ cate.id }}"><a href="{% url 'blog_system:index' cate.id %}">{{ cate.name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-7 area">
+            <ul class="list-group">
+                {% for post in post_list %}
+                    <li class="list-group-item">
+                        <h3><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}">{{ post.title }}</a></h3>
+                        <p>{{ post.desc }}</p>
+                        <span>作者：<a href="{% url 'post:post-list' post.owner.userinfo.name %}">{{ post.owner.userinfo.name }}</a></span>
+                        <span>分类：{{ post.category.name }}</span>
+                        <span>阅读量：{{ post.uv }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-3 area">
+            <li class="list-group-item">
+                <p>今日推荐</p>
+            </li>
+        </div>
+
+    </div>
+    </div>
+    <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script>
+        window.onload = function () {
+            $('#pro_cate{{ pro_category.id }}').addClass("active")
+        }
+    </script>
 </body>
 </html>

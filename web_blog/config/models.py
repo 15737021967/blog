@@ -43,7 +43,7 @@ class SideBar(models.Model):
         (DISPLAY_HOT, '最热文章'),
         (DISPLAY_COMMENT, '最近评论'),
         (DISPLAY_CATEGORY, '个人分类'),
-        (DISPLAY_INTERFILE, '归档'),
+        # (DISPLAY_INTERFILE, '归档'),
     )
     title = models.CharField(max_length=50, verbose_name="标题")
     display_type = models.PositiveIntegerField(default=1, choices=SIDE_TYPE, verbose_name="展示类型")

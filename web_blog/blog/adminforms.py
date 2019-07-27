@@ -54,4 +54,4 @@ class PostAdminForm(forms.ModelForm):
         return super().clean()
 
     class Media:
-        js = ('js/post_editor.js', )
+        js = ('default/js/post_editor.js', )

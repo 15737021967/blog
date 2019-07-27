@@ -1,3 +1,4 @@
+from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 from blog.models import Post
 from blog_system.models import ProjectCategory
@@ -9,8 +10,11 @@ from blog_system.models import ProjectCategory
 class IndexViewMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        pro_category_id = self.kwargs.get('pro_category_id')
+        pro_category = get_object_or_404(ProjectCategory, id=pro_category_id)
         context.update({
-            'pro_category': ProjectCategory.get_pro_category()
+            'pro_category_list': ProjectCategory.get_pro_category(),
+            'pro_category': pro_category
         })
         return context
 
