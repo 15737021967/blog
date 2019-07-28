@@ -1,0 +1,14 @@
+a {
+    color: #0f0f0f;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+.area{
+    padding: 4px;
+}
+.head_area{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}

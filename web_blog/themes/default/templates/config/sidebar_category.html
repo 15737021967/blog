@@ -6,7 +6,16 @@
 </head>
 <body>
     {% for cate in categories %}
-        {{ cate.name }} {{ cate.post_count }}
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-left">
+                    <a href="{% url 'post:category-list' cate.owner.userinfo.name cate.id %}" class="a-color">
+                        {{ cate.name }}
+                    </a>
+                </p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2"><p class="text-right count">{{ cate.post_count }}篇</p></div>
+        </div>
     {% endfor %}
 </body>
 </html>

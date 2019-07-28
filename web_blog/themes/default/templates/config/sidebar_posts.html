@@ -4,7 +4,7 @@
 <body>
     <ul>
         {% for post in posts %}
-            <li><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}">{{ post.title }}</a></li>
+            <li><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}" class="a-color">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 </body>

@@ -43,7 +43,7 @@ class CategoryView(IndexView):
         auth = self.kwargs.get('auth')
         auth_obj = get_object_or_404(User, userinfo__name=auth)
         category_id = self.kwargs.get('category_id')
-        category = get_object_or_404(Category, owner=auth_obj)
+        return context
 
     def get_queryset(self):
         queryset = super(CategoryView, self).get_queryset()
@@ -79,16 +79,6 @@ class PostDetailView(CommonViewMixin, DetailView):
     template_name = 'blog/detail.html'
     context_object_name = 'post'
     pk_url_kwarg = 'post_id'
-
-    # def get_context_data(self, **kwargs):
-    #     context = super(PostDetailView, self).get_context_data(**kwargs)
-    #     post_id = self.kwargs.get('post_id')
-    #     print(post_id)
-    #     context.update({
-    #         'comment_form': CommentForm,
-    #         'comment_list': Comment.get_by_reply_to_blog(post_id)
-    #     })
-    #     return context
 
     def get(self, request, *args, **kwargs):
         response = super().get(request, *args, **kwargs)

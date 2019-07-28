@@ -1,15 +1,31 @@
 {% extends "blog/base.html" %}
 {% block main %}
-    {% for post in post_list %}
-        {{ post.title }}{{ post.category.name }}
-    {% endfor %}
-    {% for sidebar in Sidebars %}
-        {{ sidebar.title }}
-        {{ sidebar.content_html }}
-    {% endfor %}
-    {% for cate in navs %}
-        {{ cate.name }}
-    {% endfor %}
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            {% for post in post_list %}
+                {{ post.title }}{{ post.category.name }}
+            {% endfor %}
+        </li>
+        {% for post in post_list %}
+            <li class="list-group-item article">
+                <h4><p><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}"class="a-color">{{ post.title }}</a></p></h4>
+                <p>{{ post.desc }}</p>
+                <p>{{ post.created_time }}</p>
+                <p>分类：{{ post.category.name }}</p>
+                <p>阅读量：{{ post.uv }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    {% if page_obj %}
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}">上一页</a>
+        {% endif %}
+            Page{{ page_obj.number }} of {{ paginator.num_pages }}.
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">下一页</a>
+        {% endif %}
+    {% endif %}
 {% endblock %}
 
 

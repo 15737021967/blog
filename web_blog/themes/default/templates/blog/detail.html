@@ -1,8 +1,22 @@
 {% extends "blog/base.html" %}
 {% load comment_block %}
 {% block main %}
-    {{ post.content }}
-    <hr>
-    {% comment_block post.id %}
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h1>{{ post.title }}</h1>
+            <div class="article-info">
+                <span>{{ post.created_time }}</span>
+                <a href="{% url 'post:post-list' post.owner.userinfo.name %}" class="follow-name">{{ post.owner.userinfo.name }}</a>
+                <span>阅读数 {{ post.uv }}</span>
+            </div>
+
+        </li>
+        <li class="list-group-item">
+            <article>
+                {{ post.content_html|safe }}
+            </article>
+        </li>
+        {% comment_block post.id %}
+    </ul>
 {% endblock %}
 

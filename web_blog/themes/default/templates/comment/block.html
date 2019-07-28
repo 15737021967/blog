@@ -5,26 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-    <hr>
-    <div class="comment">
+    <li class="list-group-item">
         <form class="form-group" action="{% url 'comment:comment' %}" method="POST">
             {% csrf_token %}
-            {{ comment_form }}
-            <input type="submit" value="提交">
-        </form>
-
-        <!--评论列表-->
-        <ul class="list-group">
-            {% for comment in comment_list %}
-            <li class="list-group-item">
-                <div class="nickname">
-                    {{ comment.reply.userinfo }}:{% autoescape off %}{{ comment.content }}{% endautoescape %}
-                    <span>{{ comment.created_time }}</span>
+            <div>
+                {% for field in comment_form %}
+                    {{ field }}
+                {% endfor %}
+                <div class="row btn-comment">
+                    <div class="col-md-2 col-lg-offset-10 text-right"><input type="submit" value="发表评论" class="btn btn-info"></div>
                 </div>
-            </li>
+            </div>
+        </form>
+    </li>
+    <li class="list-group-item">
+        <!--评论列表-->
+        {% for comment in comment_list %}
+            <div class="nickname">
+                {{ comment.reply.userinfo }}:{% autoescape off %}{{ comment.content }}{% endautoescape %}
+                <span>{{ comment.created_time }}</span>
+            </div>
+            <ul>
                 {{ comment.get_children_comment }}
-            {% endfor %}
-        </ul>
-    </div>
+            </ul>
+
+        {% endfor %}
+    </li>>
 </body>
 </html>

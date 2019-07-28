@@ -18,9 +18,8 @@ from .models import Comment
 class CommentForm(forms.Form):
 
     content = fields.CharField(
-        label='内容',
         max_length=2000,
-        widget=widgets.TextInput()
+        widget=widgets.Textarea(attrs={'placeholder': '想对作者说什么', 'class': 'comment-content'})
     )
 
     parent = fields.CharField(

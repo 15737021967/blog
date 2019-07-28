@@ -7,22 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if pro_category.id == 1 %}PDBG-专业IT技术社区{% else %}{{ pro_category.name }}-PDBG{% endif %}</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-    <style>
-        a {
-            color: #0f0f0f;
-        }
-        a:hover{
-            text-decoration: none;
-            color: red;
-        }
-        .area{
-            padding: 4px;
-        }
-        .head_area{
-            margin-top: 0px;
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'default/css/index.css' %}">
 </head>
 <body style="background-color: whitesmoke">
     <nav class="navbar navbar-default head_area" style="background-color: white">
@@ -81,7 +66,7 @@
             <ul class="list-group">
                 {% for post in post_list %}
                     <li class="list-group-item">
-                        <h3><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}">{{ post.title }}</a></h3>
+                        <h4><p><a href="{% url 'post:post-detail' post.owner.userinfo.name post.id %}">{{ post.title }}</a></p></h4>
                         <p>{{ post.desc }}</p>
                         <span>作者：<a href="{% url 'post:post-list' post.owner.userinfo.name %}">{{ post.owner.userinfo.name }}</a></span>
                         <span>分类：{{ post.category.name }}</span>

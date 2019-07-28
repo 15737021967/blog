@@ -3,10 +3,12 @@
 <body>
     <ul>
         {% for comment in comments %}
-            <li><a href="{% url 'post:post-detail' comment.reply_to_blog.owner.userinfo.name comment.reply_to_blog.id %}">
+            <li>
+                <a href="{% url 'post:post-detail' comment.reply_to_blog.owner.userinfo.name comment.reply_to_blog.id %}" class="a-color">
                 {{ comment.reply_to_blog.title }}</a> |
                 {{comment.reply.userinfo.name}}{% if comment.parent %}回复{{ comment.reply_to.userinfo.name }}:{% endif %}
-                : {% autoescape off %}{{ comment.content }}{% endautoescape %}</li>
+                : {% autoescape off %}{{ comment.content }}{% endautoescape %}
+            </li>
         {% endfor %}
     </ul>
 </body>

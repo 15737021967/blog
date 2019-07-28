@@ -6,8 +6,10 @@
 </head>
 <body>
     {% for comment in comment_children_list %}
-        {{ comment.reply.userinfo }}回复{{ comment.reply_to.userinfo }}:{{ comment.content }}
-        <span>{{ comment.created_time }}</span>
+        <li>
+            {{ comment.reply.userinfo }}回复{{ comment.reply_to.userinfo }}:{% autoescape off %}{{ comment.content }}{% endautoescape %}
+            <span>{{ comment.created_time }}</span>
+        </li>
     {% endfor %}
 
 </body>

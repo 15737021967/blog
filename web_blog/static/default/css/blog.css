@@ -1,0 +1,72 @@
+.area{
+    padding: 0px;
+    margin-bottom: 7px;
+    -webkit-box-shadow:0px 3px 3px #c8c8c8;
+    -moz-box-shadow:0px 3px 3px #c8c8c8;
+    box-shadow:0px 3px 3px #c8c8c8;
+}
+.a-color{
+    color: #0f0f0f;
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+.head_area{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.aside-title{
+    margin: 0px;
+    padding: 16px 16px 0;
+    font-size: 14px;
+    color: black;
+    font-family: "Microsoft YaHei UI";
+    font-weight: 700;
+}
+.aside-content{
+    padding: 16px 16px 10px 16px;
+}
+.count{
+    font-size: 12px;
+    color: #858585;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.article:hover{
+    background-color: whitesmoke;
+}
+.post-item{
+    padding: 2px;
+}
+.article-info{
+    color: #858585;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+}
+span{
+    margin-right: 14px;
+}
+.follow-name{
+    margin-right: 14px;
+}
+.comment-content{
+    display: block;
+    width: 100%;
+    padding: 7px 8px;
+    background-color: #fff;
+    border: 1px solid #5e5e5e;
+    border-radius: 4px;
+    resize: none;
+    height: 64px;
+    font-size: 14px;
+    line-height: 22px;
+    transition:height .3s ease-in-out;
+}
+.open{
+    height: 64px;
+}
+.btn-comment{
+    margin-top: 8px;
+    margin-left: 16px;
+}
