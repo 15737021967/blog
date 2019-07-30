@@ -8,10 +8,14 @@ from user.models import UserInfo
 
 class UserForm(forms.Form):
 
-    account = fields.EmailField(widget=widgets.EmailInput(), label="账号", required=False)
-    password = fields.CharField(widget=widgets.PasswordInput(), label="密码", required=False)
-    confirm_password = fields.CharField(widget=widgets.PasswordInput(), label="确定密码", required=False)
-    name = fields.CharField(widget=widgets.Input(), label="用户名", required=False)
+    account = fields.EmailField(widget=widgets.EmailInput(attrs={'class': 'input-text', 'placeholder': '邮箱'}),
+                                label="账号", required=False)
+    password = fields.CharField(widget=widgets.PasswordInput(attrs={'class': 'input-text', 'placeholder': '密码'}),
+                                label="密码", required=False)
+    confirm_password = fields.CharField(widget=widgets.PasswordInput(
+        attrs={'class': 'input-text', 'placeholder': '请再次输入密码'}), label="确定密码", required=False)
+    name = fields.CharField(widget=widgets.Input(attrs={'class': 'input-text', 'placeholder': '用户名'}),
+                            label="用户名", required=False)
 
     def clean_account(self):
         account = self.cleaned_data.get('account')
@@ -51,8 +55,10 @@ class UserForm(forms.Form):
 
 class LoginForms(forms.Form):
 
-    account = fields.EmailField(widget=widgets.EmailInput(), label="账号", required=False)
-    password = fields.CharField(widget=widgets.PasswordInput(), label="密码", required=False)
+    account = fields.EmailField(widget=widgets.EmailInput(attrs={'class': 'input-text', 'placeholder': '邮箱'}),
+                                label="账号", required=False)
+    password = fields.CharField(widget=widgets.PasswordInput(attrs={'class': 'input-text', 'placeholder': '密码'}),
+                                label="密码", required=False)
 
     def clean_password(self):
 
@@ -66,12 +72,32 @@ class LoginForms(forms.Form):
 
 class EditInfo(forms.ModelForm):
 
-    birthday = fields.DateTimeField(widget=widgets.DateInput(attrs={'type': 'date'}), label='生日')
+    birthday = fields.DateTimeField(
+        widget=widgets.DateInput(attrs={'type': 'date', 'class': 'el-input__inner'}),
+        label='生日'
+    )
+    nickname = fields.CharField(widget=widgets.TextInput(
+        attrs={'class': 'el-input__inner'}),
+        label='昵称'
+    )
+    sex = fields.ChoiceField(
+        widget=widgets.Select(attrs={'class': 'el-input__inner'}),
+        label='性别',
+        choices=((0, '男'), (1, '女'), (2, '未知'))
+    )
+    address = fields.CharField(
+        widget=widgets.TextInput(attrs={'class': 'el-input__inner'}),
+        label='地址'
+    )
+    introduction = fields.CharField(
+        widget=widgets.TextInput(attrs={'class': 'textarea'}),
+        label='简介'
+    )
 
     class Meta:
         model = UserInfo
         fields = (
-            'nickname', 'sex', 'birthday', 'introduction', 'address'
+            'nickname', 'sex', 'birthday', 'address', 'introduction'
         )
 
 

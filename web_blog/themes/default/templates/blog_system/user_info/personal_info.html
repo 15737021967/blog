@@ -1,0 +1,78 @@
+{% extends 'blog_system/user_info/base.html' %}
+{% load static %}
+{% block title %}个人资料{% endblock %}
+{% block extra_head %}
+        <link rel="stylesheet" href="{% static 'default/css/user_info.css' %}">
+{% endblock %}
+{% block sidebar %}
+    <div class="col-md-2 area">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="#">个人资料</a></li>
+            <li class="list-group-item"><a href="#">我的收藏</a></li>
+            <li class="list-group-item"><a href="#">我的关注</a></li>
+            <li class="list-group-item"><a href="#">我的粉丝</a></li>
+            <li class="list-group-item"><a href="#">我的博客</a></li>
+            <li class="list-group-item"><a href="#">我的下载</a></li>
+            <li class="list-group-item"><a href="#">我的论坛</a></li>
+        </ul>
+    </div>
+{% endblock %}
+{% block main_info %}
+    <div class="col-md-9 area">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h3 class="info-title">个人资料</h3>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="{% static 'imgs/SC01C14.jpg' %}" alt="" style="height: 100px;width: 100px;margin-top: 16px" class="img-circle">
+                    </div>
+                    <div class="col-md-9 area">
+                        <div class="right-info">
+                            <div class="id-card">
+                                <span class="id-name">ID：{{ user_info.name }}</span>
+                                <a href="{% url 'post:post-list' user_info.name %}" class="user-home text-right">个人主页</a>
+                            </div>
+                        </div>
+                        <div class="pdbg-info">
+                            <span class="span-info">关注 14</span>
+                            <span class="span-info">粉丝 15</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="nick-name">
+                            <span>昵称：{{ user_info.nickname }}</span>
+                            <span class="mod">修改资料</span>
+                        </div>
+                        <ul class="self">
+                            <li class="common">性别：{{ user_info.get_sex_display }}</li>
+                            <li class="common">生日：{{ user_info.birthday }}</li>
+                            <li class="common">地址：{{ user_info.address }}</li>
+                            <li class="common">简介：{{ user_info.introduction }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="dialog hidden">
+        <div class="dialog-cont">
+            <div class="box">
+                <h3 class="title">修改资料</h3>
+                <span class="close">×</span>
+            </div>
+            <form action="{% url 'edit_info' %}" method="post">
+            {% for field in info_form %}
+                <p class="nick word">
+                        <span class="nc">{{ field.label }}：</span>
+                        {{ field }}
+                </p>
+                {% csrf_token %}
+            {% endfor %}
+            <div class="btn-group-list">
+                <button class="cancel">取消</button>
+                <button class="confirm">确定</button>
+            </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+

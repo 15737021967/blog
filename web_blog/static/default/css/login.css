@@ -1,0 +1,57 @@
+.login{
+    margin-top: 5%;
+}
+.picture{
+    width: 500px;
+    height: 500px;
+}
+.login-form{
+    margin-left: 50px;
+}
+.tu{
+    margin-left: 82px;
+}
+.form-location{
+    margin: 44px 112px;
+}
+.btn-submit{
+    border: 1px;
+    padding: 8px 12px;
+    width: 254px;
+    height: 37px;
+    margin-top: 35px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+}
+li{
+    list-style-type: none;
+}
+.input-card{
+    width: 254px;
+    height: 32px;
+}
+.input-text{
+    width: 219px;
+    height: 14px;
+    padding: 8px 25px 8px 8px;
+    margin-left: 100px;
+}
+.forget-password{
+    margin-left: 260px;
+    color: red;
+}
+.pas-info{
+    color: #858585;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+}
+ul[class=errorlist]>li{
+    color: #858585;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    margin-left: 60px;
+}
+.login-page{
+    margin-left: 210px;
+    color: red;
+}

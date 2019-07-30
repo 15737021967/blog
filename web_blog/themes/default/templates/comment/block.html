@@ -22,14 +22,15 @@
         <!--评论列表-->
         {% for comment in comment_list %}
             <div class="nickname">
-                {{ comment.reply.userinfo }}:{% autoescape off %}{{ comment.content }}{% endautoescape %}
-                <span>{{ comment.created_time }}</span>
+                <a href="{% url 'post:post-list' comment.reply.userinfo.name %}">{{ comment.reply.userinfo }}：</a>
+                <span>{% autoescape off %}{{ comment.content }}{% endautoescape %}</span>
+                <span class="article-info">({{ comment.created_time }})</span>
             </div>
             <ul>
                 {{ comment.get_children_comment }}
             </ul>
 
         {% endfor %}
-    </li>>
+    </li>
 </body>
 </html>

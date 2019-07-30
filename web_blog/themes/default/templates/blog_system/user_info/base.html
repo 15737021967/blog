@@ -3,16 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %}-PDBG博客</title>
+    <title>{% block title %}{% endblock %}-个人中心-PDBG</title>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'default/css/blog.css' %}">
-    {% block extra_head %}
-    {% endblock %}
+    {% block extra_head %}{% endblock %}
 </head>
 <body style="background-color: whitesmoke">
-       <nav class="navbar navbar-default head_area" style="background-color: white">
+    <nav class="navbar navbar-default head_area" style="background-color: white">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -23,7 +19,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">博客<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">博客<span class="sr-only">(current)</span></a></li>
                 </ul>
                 <form class="navbar-form navbar-left form-inline">
                     <div class="form-group">
@@ -53,30 +49,14 @@
     </nav>
     <div class="container">
     <div class="row">
-        <!-- 侧边栏 -->
-        <div class="col-md-3 post-item">
-            <ul class="list-group">
-                {% for sidebar in sidebars %}
-                    <li class="list-group-item area" id="pro_cate{{ cate.id }}">
-                            <h3 class="aside-title">{{ sidebar.title }}</h3>
-                            <div class="aside-content">{{ sidebar.content_html }}</div>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- 博客列表 -->
-        <div class="col-md-8 post-item">
-            {% block main %}
-            {% endblock %}
-        </div>
-        <div class="col-md-1">
-                        <li class="list-group-item">
-                <p>今日推荐</p>
-            </li>
-        </div>
+        {% block sidebar %}
+        {% endblock %}
+        {% block main_info %}
+        {% endblock %}
     </div>
     </div>
     <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    {% block extra_script %}{% endblock %}
 </body>
 </html>

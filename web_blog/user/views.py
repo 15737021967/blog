@@ -100,11 +100,13 @@ class EditUserInfo(LoginRequiredMixin, View):
     def get(self, request):
         user_info = get_object_or_404(UserInfo, owner=request.user)
         info = EditInfo(instance=user_info)
-        return render(request, 'blog_system/edit_info.html', context={'user_info': info})
+        return render(request, 'blog_system/user_info/personal_info.html',
+                      context={'info_form': info, 'user_info': user_info})
 
     def post(self, request):
         user_info = get_object_or_404(UserInfo, owner=request.user)
         info = EditInfo(request.POST, instance=user_info)
         if info.is_valid():
             info.save()
-        return render(request, 'blog_system/edit_info.html', context={'user_info': info})
+        return render(request, 'blog_system/user_info/personal_info.html',
+                      context={'info_form': info, 'user_info': user_info})

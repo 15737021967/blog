@@ -63,9 +63,6 @@ span{
     line-height: 22px;
     transition:height .3s ease-in-out;
 }
-.open{
-    height: 64px;
-}
 .btn-comment{
     margin-top: 8px;
     margin-left: 16px;
