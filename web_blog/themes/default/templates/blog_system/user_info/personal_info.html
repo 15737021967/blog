@@ -34,45 +34,50 @@
                             </div>
                         </div>
                         <div class="pdbg-info">
-                            <span class="span-info">关注 14</span>
-                            <span class="span-info">粉丝 15</span>
+                            <span class="span-info">关注 X</span>
+                            <span class="span-info">粉丝 X</span>
                         </div>
                         <div class="line"></div>
                         <div class="nick-name">
-                            <span>昵称：{{ user_info.nickname }}</span>
-                            <span class="mod">修改资料</span>
+                            <span class="nickname">昵称：{{ user_info.nickname }}</span>
+                            <span class="mod" id="edit-button">修改资料</span>
                         </div>
                         <ul class="self">
-                            <li class="common">性别：{{ user_info.get_sex_display }}</li>
-                            <li class="common">生日：{{ user_info.birthday }}</li>
-                            <li class="common">地址：{{ user_info.address }}</li>
-                            <li class="common">简介：{{ user_info.introduction }}</li>
+                            <li class="common sex">性别：{{ user_info.get_sex_display }}</li>
+                            <li class="common birthday">生日：{{ user_info.birthday }}</li>
+                            <li class="common address">地址：{{ user_info.address }}</li>
+                            <li class="common introduction">简介：{{ user_info.introduction }}</li>
                         </ul>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
-    <div class="dialog hidden">
+    <div class="dialog hidden" id="edit-form">
         <div class="dialog-cont">
             <div class="box">
                 <h3 class="title">修改资料</h3>
                 <span class="close">×</span>
             </div>
-            <form action="{% url 'edit_info' %}" method="post">
+            <form action="{% url 'edit_info' %}" method="post" id="fm">
             {% for field in info_form %}
                 <p class="nick word">
                         <span class="nc">{{ field.label }}：</span>
                         {{ field }}
                 </p>
-                {% csrf_token %}
             {% endfor %}
+            {% csrf_token %}
             <div class="btn-group-list">
-                <button class="cancel">取消</button>
-                <button class="confirm">确定</button>
+                <input type="button" class="cancel" value="取消">
+                <input type="button" class="confirm" value="确定">
             </div>
             </form>
         </div>
     </div>
 {% endblock %}
+{% block extra_script %}
+    <script src="{% static 'default/js/user_info.js' %}" type="text/javascript"></script>
+    <script>
 
+    </script>
+{% endblock %}

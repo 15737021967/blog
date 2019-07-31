@@ -38,7 +38,7 @@ class CommentForm(forms.Form):
     def clean_parent(self):
         parent = self.cleaned_data.get('parent')
         if len(parent) > 0:
-            if not UserInfo.objects.filter(id=parent).exists():
+            if not Comment.objects.filter(id=parent).exists():
                 raise forms.ValidationError('操作异常')
 
         return parent

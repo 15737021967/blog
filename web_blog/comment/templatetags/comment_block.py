@@ -22,7 +22,6 @@ def comment_block(blog_id):
     default = {
         'reply_to': user.userinfo.name,
         'reply_to_blog': blog_id,
-
     }
 
     return {

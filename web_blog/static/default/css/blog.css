@@ -67,3 +67,79 @@ span{
     margin-top: 8px;
     margin-left: 16px;
 }
+.opt-box{
+    vertical-align: top;
+    display: inline-block;
+}
+.reply{
+    /*display: none;*/
+    margin: 0;
+    min-width: auto;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.profile-intro{
+    padding: 16px 16px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.d-flex{
+    display: -webkit-box !important;
+    display: flex !important;
+}
+.avatar-box{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    flex-direction: column !important;
+    display: flex !important;
+}
+.auth-name{
+    margin-left: 8px;
+    width: 156px;
+    display: -webkit-box !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.p-name{
+    font-family: "Microsoft YaHei UI";
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 700;
+}
+.data-info{
+    padding: 16px 10px 10px 10px;
+    border-bottom: 1px solid #e3e3e3;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 70px;
+    width: 100%;
+}
+.count{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft YaHei UI";
+    margin-right: 3px;
+    margin-top: 10px;
+}
+dl{
+    width: 70px;
+    height: 22px;
+}
+.info-block{
+    margin-bottom: 7px;
+}

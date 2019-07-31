@@ -9,6 +9,7 @@ from user.models import EmailVerification, UserInfo
 from web_blog.emailverification import range_code, email_message
 from user.userforms import UserForm, LoginForms, EditInfo
 from blog.models import Post
+import json
 # import json
 
 
@@ -104,9 +105,23 @@ class EditUserInfo(LoginRequiredMixin, View):
                       context={'info_form': info, 'user_info': user_info})
 
     def post(self, request):
+        rep = {
+            'status': False,
+            'msg': None,
+            'info': None,
+        }
         user_info = get_object_or_404(UserInfo, owner=request.user)
         info = EditInfo(request.POST, instance=user_info)
         if info.is_valid():
             info.save()
-        return render(request, 'blog_system/user_info/personal_info.html',
-                      context={'info_form': info, 'user_info': user_info})
+            rep['status'] = True
+            rep['info'] = {
+                'nickname': info.initial['nickname'],
+                'sex': '未知' if info.initial['sex'] == 2 else '女' if info.initial['sex'] == 1 else '男',
+                'birthday': info.initial['birthday'].strftime("%Y年%m月%d日"),
+                'address': info.initial['address'],
+                'introduction': info.initial['introduction'],
+            }
+        else:
+            rep['msg'] = info.errors.as_json()
+        return HttpResponse(json.dumps(rep))

@@ -1,36 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <li class="list-group-item">
-        <form class="form-group" action="{% url 'comment:comment' %}" method="POST">
-            {% csrf_token %}
-            <div>
-                {% for field in comment_form %}
-                    {{ field }}
-                {% endfor %}
-                <div class="row btn-comment">
-                    <div class="col-md-2 col-lg-offset-10 text-right"><input type="submit" value="发表评论" class="btn btn-info"></div>
+<li class="list-group-item">
+    <form class="form-group" action="{% url 'comment:comment' %}" method="POST">
+        {% csrf_token %}
+        <div>
+            {% for field in comment_form %}
+                {{ field }}
+            {% endfor %}
+            <div class="row btn-comment">
+                <div class="col-md-5 col-lg-offset-7 text-right">
+                    <input type="button" value="取消回复" class="hidden" id="cancel">
+                    <input type="submit" value="发表评论" class="btn btn-info">
                 </div>
             </div>
-        </form>
-    </li>
-    <li class="list-group-item">
-        <!--评论列表-->
-        {% for comment in comment_list %}
-            <div class="nickname">
-                <a href="{% url 'post:post-list' comment.reply.userinfo.name %}">{{ comment.reply.userinfo }}：</a>
-                <span>{% autoescape off %}{{ comment.content }}{% endautoescape %}</span>
-                <span class="article-info">({{ comment.created_time }})</span>
-            </div>
-            <ul>
-                {{ comment.get_children_comment }}
-            </ul>
-
-        {% endfor %}
-    </li>
-</body>
-</html>
+        </div>
+    </form>
+</li>
+<li class="list-group-item">
+    <!--评论列表-->
+    {% for comment in comment_list %}
+        <div class="nickname">
+            <a href="{% url 'post:post-list' comment.reply.userinfo.name %}">{{ comment.reply.userinfo }}：</a>
+            <span>{% autoescape off %}{{ comment.content }}{% endautoescape %}</span>
+            <span class="article-info">({{ comment.created_time }})</span>
+            <span class="opt-box">
+                <a class="reply" name="{{ comment.id }}" reply_to="{{ comment.reply.userinfo.name }}" href="javascript:void(0)">回复</a>
+            </span>
+        </div>
+        <ul>
+            {{ comment.get_children_comment }}
+        </ul>
+    {% endfor %}
+</li>

@@ -56,6 +56,34 @@
         <!-- 侧边栏 -->
         <div class="col-md-3 post-item">
             <ul class="list-group">
+                <li class="list-group-item info-block">
+                    <div class="profile-intro d-flex">
+                        <div class="avatar-box">
+                            <img src="{% static 'imgs/SC01C14.jpg' %}" alt="" style="height: 48px;width: 48px;margin-top: 16px" class="img-circle" alt="">
+                        </div>
+                        <div class="auth-name">
+                            <p class="p-name">{{ auth }}</p>
+                        </div>
+                    </div>
+                    <div class="data-info">
+                        <dl class="text-center">
+                            <dt><a href="#" class="a-color">原创</a></dt>
+                            <dd><span class="count">126</span></dd>
+                        </dl>
+                        <dl class="text-center">
+                            <dt><a href="#" class="a-color">粉丝</a></dt>
+                            <dd><span class="count">15</span></dd>
+                        </dl>
+                         <dl class="text-center">
+                            <dt><a href="#" class="a-color">喜欢</a></dt>
+                            <dd><span class="count">20</span></dd>
+                        </dl>
+                          <dl class="text-center">
+                            <dt><a href="#" class="a-color">点赞</a></dt>
+                            <dd><span class="count">16</span></dd>
+                        </dl>
+                    </div>
+                </li>
                 {% for sidebar in sidebars %}
                     <li class="list-group-item area" id="pro_cate{{ cate.id }}">
                             <h3 class="aside-title">{{ sidebar.title }}</h3>
@@ -78,5 +106,8 @@
     </div>
     <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    {% block extra_script %}
+    
+    {% endblock %}
 </body>
 </html>

@@ -19,6 +19,7 @@ class CommonViewMixin:
         auth_obj = get_object_or_404(User, userinfo__name=auth)
         context.update({
             'sidebars': SideBar.get_all(auth_obj),
+            'auth': auth
         })
         context.update(Category.get_navs(auth_obj))
         return context

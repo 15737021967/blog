@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404, HttpResponse
 from django.views.generic import View
 from django.contrib.auth.models import User
+from django.contrib.auth.mixins import LoginRequiredMixin
 from blog.models import Post
 from comment.commentforms import CommentForm
 from comment.models import Comment
@@ -8,7 +9,9 @@ import json
 # Create your views here.
 
 
-class CommentView(View):
+class CommentView(LoginRequiredMixin, View):
+    login_url = '/login/'
+    redirect_field_name = 'next'
     http_method_names = ['post']
 
     def post(self, request):
@@ -24,7 +27,7 @@ class CommentView(View):
             content = comment_form.cleaned_data.get('content')
             if len(parent) > 0:
                 Comment.objects.create(reply=request.user, reply_to_blog=reply_to_blog, reply_to=reply_to_user,
-                                       content=content, parent=parent)
+                                       content=content, parent_id=parent)
             else:
                 Comment.objects.create(reply=request.user, reply_to_blog=reply_to_blog, reply_to=reply_to_user,
                                        content=content)
@@ -32,6 +35,7 @@ class CommentView(View):
 
         else:
             context['errors'] = comment_form.errors.as_json()
+            print(comment_form.errors)
 
         return HttpResponse(json.dumps(context))
 

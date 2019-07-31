@@ -19,4 +19,23 @@
         {% comment_block post.id %}
     </ul>
 {% endblock %}
+{% block extra_script %}
+<script>
+    $('.reply').click(function () {
+        var id = $(this).attr('name')
+        var reply_to = $(this).attr('reply_to')
+        $('#id_parent').attr('value', id)
+        $('#id_reply_to').attr('value', reply_to)
+        $('#cancel').removeClass('hidden')
+        $('#id_content').attr('placeholder', '想对 '+ reply_to + ' 说什么')
+    })
+    $('#cancel').click(function () {
+        var reply_to = $('.follow-name').text()
+        $('#id_parent').attr('value', '')
+        $('#id_reply_to').attr('value', reply_to)
+        $('#id_content').attr('placeholder', '想对作者说什么')
+        $(this).addClass('hidden')
+    })
+</script>
+{% endblock %}
 

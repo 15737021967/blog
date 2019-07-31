@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
-    {% for comment in comment_children_list %}
-        <li style="list-style-type: none">
-            <a href="{% url 'post:post-list' comment.reply.userinfo.name %}">{{ comment.reply.userinfo }}</a>
-            <span class="article-info">回复</span>
-            <span class="article-info">{{ comment.reply_to.userinfo.name }}：</span>
-            <span>{% autoescape off %}{{ comment.content }}{% endautoescape %}</span>
-            <span class="article-info">({{ comment.created_time }})</span>
-        </li>
-    {% endfor %}
-</body>
-</html>
+{% for comment in comment_children_list %}
+    <li style="list-style-type: none">
+        <a href="{% url 'post:post-list' comment.reply.userinfo.name %}">{{ comment.reply.userinfo }}</a>
+        <span class="article-info">回复</span>
+        <span class="article-info">{{ comment.reply_to.userinfo.name }}：</span>
+        <span>{% autoescape off %}{{ comment.content }}{% endautoescape %}</span>
+        <span class="article-info">({{ comment.created_time }})</span>
+        <span class="opt-box">
+            <a class="reply" name="{{ comment.parent.id }}" reply_to="{{ comment.reply.userinfo.name }}" href="javascript:0">回复</a>
+        </span>
+    </li>
+{% endfor %}

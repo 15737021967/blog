@@ -24,8 +24,12 @@ class Comment(models.Model):
 
     objects = models.Manager()
 
+    def __str__(self):
+        return self.content
+
     class Meta:
         verbose_name = verbose_name_plural = "评论"
+        ordering = ['created_time']
 
     @classmethod
     def get_by_reply_to_blog(cls, blog_id):
@@ -34,6 +38,16 @@ class Comment(models.Model):
     @property
     def get_children_comment(self):
         context = {
-            'comment_children_list': Comment.objects.filter(parent=self).order_by('-created_time')
+            'comment_children_list': Comment.objects.filter(parent=self).order_by('created_time')
         }
         return render_to_string('comment/comment_children.html', context=context)
+
+
+class Snap(models.Model):
+    blog = models.ForeignKey(Post, verbose_name="点赞文章", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name="点赞人", on_delete=models.CASCADE)
+    created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
+
+    class Meta:
+        unique_together = (('blog', 'user'), )
+        verbose_name_plural = verbose_name = "点赞"
