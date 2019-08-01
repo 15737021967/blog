@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 {% block main %}
-
+<div class="col-md-8 post-item">
     <ul class="list-group">
         <li class="list-group-item">
             {% for post in post_list %}
@@ -26,6 +26,16 @@
             <a href="?page={{ page_obj.next_page_number }}">下一页</a>
         {% endif %}
     {% endif %}
+</div>
+{% endblock %}
+{% block extra_main %}
+    <div class="col-md-1">
+        <ul class="list-group">
+            <li class="list-group-item">
+            每日推荐
+            </li>
+        </ul>
+        </div>
 {% endblock %}
 
 

@@ -38,7 +38,7 @@ class Register(View):
             code = range_code()
             EmailVerification.objects.create(account=account, status=EmailVerification.STATUS_REGISTER, code=code)
             message = email_message(code)
-            send_mail('账号激活', message, '1531391246@qq.com', ['1531391246@qq.com', ])
+            send_mail('账号激活', message, '1531391246@qq.com', [account, ])
             print('create successful!')
 
         else:

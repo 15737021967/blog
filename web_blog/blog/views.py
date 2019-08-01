@@ -6,8 +6,7 @@ from django.views.generic import ListView, DetailView
 from django.db.models import F
 from .models import Post, Category, Tag
 from config.models import SideBar
-from comment.commentforms import CommentForm
-from comment.models import Comment
+from comment.models import Snap
 
 # Create your views here.
 
@@ -52,21 +51,21 @@ class CategoryView(IndexView):
         return queryset.filter(category_id=category_id)
 
 
-class TagView(IndexView):
-    """根据标签查看文章"""
-    def get_context_data(self, **kwargs):
-        context = super(TagView, self).get_context_data(**kwargs)
-        tag_id = self.kwargs.get('tag_id')
-        tag = get_object_or_404(Tag, pk=tag_id)
-        context.update({
-            'tag': tag,
-        })
-        return context
-
-    def get_queryset(self):
-        queryset = super(TagView, self).get_queryset()
-        tag_id = self.kwargs.get('tag_id')
-        return queryset.filter(tag__id=tag_id)
+# class TagView(IndexView):
+#     """根据标签查看文章"""
+#     def get_context_data(self, **kwargs):
+#         context = super(TagView, self).get_context_data(**kwargs)
+#         tag_id = self.kwargs.get('tag_id')
+#         tag = get_object_or_404(Tag, pk=tag_id)
+#         context.update({
+#             'tag': tag,
+#         })
+#         return context
+#
+#     def get_queryset(self):
+#         queryset = super(TagView, self).get_queryset()
+#         tag_id = self.kwargs.get('tag_id')
+#         return queryset.filter(tag__id=tag_id)
 
 
 class PostDetailView(CommonViewMixin, DetailView):
@@ -76,6 +75,18 @@ class PostDetailView(CommonViewMixin, DetailView):
         auth_obj = get_object_or_404(User, userinfo__name=auth)
         queryset = Post.latest_posts(auth_obj)
         return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super(PostDetailView, self).get_context_data(**kwargs)
+        post_id = self.kwargs.get('post_id')
+        if not self.request.user.is_authenticated:
+            snap = False
+        else:
+            snap = Snap.objects.filter(post_id=post_id, user=self.request.user)
+        context.update({
+            'snap': snap
+        })
+        return context
 
     template_name = 'blog/detail.html'
     context_object_name = 'post'
@@ -92,7 +103,7 @@ class PostDetailView(CommonViewMixin, DetailView):
         uv_key = 'uv:%s:%s:%s' % (uid, str(date.today()), self.request.path)
         if not cache.get(uv_key):
             increase_uv = True
-            cache.set(uv_key, 1, 60*60*2)
+            cache.set(uv_key, 1, 60*60*24)
         if increase_uv:
             Post.objects.filter(pk=self.object.id).update(uv=F('uv')+1)
 

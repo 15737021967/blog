@@ -56,11 +56,19 @@ class PostAdmin(BaseOwnerAdmin):
             '内容信息',
             'desc',
             'is_md',
-            'contend_ck',
-            'contend_md',
+            'content_ck',
+            'content_md',
             'content',
         )
     )
+    
+    def formfield_for_dbfield(self, db_field, **kwargs):
+        if db_field.name == 'tag':
+            kwargs['queryset'] = Tag.objects.filter(owner=self.request.user)
+        elif db_field.name == 'category':
+            kwargs['queryset'] = Category.objects.filter(owner=self.request.user)
+        attrs = self.get_field_attrs(db_field, **kwargs)
+        return db_field.formfield(**dict(attrs, **kwargs))
 
 
 @xadmin.sites.register(views.BaseAdminView)

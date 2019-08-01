@@ -25,7 +25,7 @@ class Comment(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.content
+        return "%s:%s" % (self.reply.userinfo, self.content)
 
     class Meta:
         verbose_name = verbose_name_plural = "评论"
@@ -44,10 +44,15 @@ class Comment(models.Model):
 
 
 class Snap(models.Model):
-    blog = models.ForeignKey(Post, verbose_name="点赞文章", on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, verbose_name="点赞文章", on_delete=models.CASCADE)
     user = models.ForeignKey(User, verbose_name="点赞人", on_delete=models.CASCADE)
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
+    objects = models.Manager()
+
+    def __str__(self):
+        return "%s给文章%s点赞了" % (self.user, self.post)
+
     class Meta:
-        unique_together = (('blog', 'user'), )
+        unique_together = (('post', 'user'), )
         verbose_name_plural = verbose_name = "点赞"

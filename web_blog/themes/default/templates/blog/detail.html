@@ -1,6 +1,12 @@
 {% extends "blog/base.html" %}
-{% load comment_block %}
+{% load static %}
+{% load block %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'default/css/highlight/dark.css' %}">
+{% endblock %}
 {% block main %}
+<div class="col-md-8 post-item">
     <ul class="list-group">
         <li class="list-group-item">
             <h1>{{ post.title }}</h1>
@@ -18,24 +24,16 @@
         </li>
         {% comment_block post.id %}
     </ul>
+</div>
+{% endblock %}
+{% block extra_main %}
+    <div class="col-md-1">
+        {% snap_block snap post.id %}
+    </div>
 {% endblock %}
 {% block extra_script %}
-<script>
-    $('.reply').click(function () {
-        var id = $(this).attr('name')
-        var reply_to = $(this).attr('reply_to')
-        $('#id_parent').attr('value', id)
-        $('#id_reply_to').attr('value', reply_to)
-        $('#cancel').removeClass('hidden')
-        $('#id_content').attr('placeholder', '想对 '+ reply_to + ' 说什么')
-    })
-    $('#cancel').click(function () {
-        var reply_to = $('.follow-name').text()
-        $('#id_parent').attr('value', '')
-        $('#id_reply_to').attr('value', reply_to)
-        $('#id_content').attr('placeholder', '想对作者说什么')
-        $(this).addClass('hidden')
-    })
-</script>
+    <script src="{% static 'default/js/highlight.pack.js' %}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="{% static 'default/js/detail.js' %}"></script>
 {% endblock %}
 

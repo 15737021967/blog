@@ -12,7 +12,7 @@ import random
 
 def range_code(max_length=50):
     """返回激活账号的链接"""
-    str_pool = 'abcdefghijklmnopqrstuvwxyz1234567980,!@$%^&*_+=-ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    str_pool = 'abcdefghijklmnopqrstuvwxyz123456798ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     code = [random.choice(str_pool) for i in range(max_length)]
     str_code = ''.join(code)
     return str_code

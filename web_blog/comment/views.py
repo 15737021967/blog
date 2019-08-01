@@ -1,10 +1,10 @@
-from django.shortcuts import get_object_or_404, HttpResponse
+from django.shortcuts import get_object_or_404, HttpResponse, redirect
 from django.views.generic import View
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin
 from blog.models import Post
 from comment.commentforms import CommentForm
-from comment.models import Comment
+from comment.models import Comment, Snap
 import json
 # Create your views here.
 
@@ -40,7 +40,20 @@ class CommentView(LoginRequiredMixin, View):
         return HttpResponse(json.dumps(context))
 
 
+class SnapView(View):
 
+    http_method_names = ['post', ]
 
+    def post(self, request):
+        if not request.user.is_authenticated:
+            return HttpResponse(json.dumps("redirect"))
+        msg = False
+        post_id = request.POST.get('post_id')
+        status = Snap.objects.filter(post_id=post_id, user=request.user)
+        if status.exists():
+            status.delete()
+        else:
+            Snap.objects.create(post_id=post_id, user=request.user)
+            msg = True
 
-
+        return HttpResponse(json.dumps(msg))

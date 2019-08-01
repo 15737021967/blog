@@ -1,30 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" line="30" />
+    <bookmark url="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" line="40" />
     <bookmark url="file://$PROJECT_DIR$/web_blog/web_blog/urls.py" line="17" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61b22f2c-5cca-4146-acee-49e4827af266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web_blog/static/default/js/user_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web_blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/comment/Notify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/comment/migrations/0004_auto_20190801_1038.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/comment/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/extra_info/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/extra_info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/extra_info/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/extra_info/README.ru.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/a11y-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/a11y-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/agate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/an-old-hope.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/androidstudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/arduino-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/arta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/ascetic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-cave-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-cave-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-dune-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-dune-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-estuary-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-estuary-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-forest-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-forest-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-heath-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-heath-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-lakeside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-lakeside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-plateau-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-plateau-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-savanna-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-savanna-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-seaside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-seaside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-sulphurpool-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atelier-sulphurpool-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atom-one-dark-reasonable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atom-one-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/atom-one-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/brown-paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/brown-papersq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/codepen-embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/color-brewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/darcula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/darkula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/docco.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/dracula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/far.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/github-gist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/gml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/googlecode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/grayscale.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/gruvbox-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/gruvbox-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/hopscotch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/hybrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/ir-black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/isbl-editor-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/isbl-editor-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/kimbie.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/kimbie.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/lightfair.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/magula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/mono-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/monokai-sublime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/nord.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/obsidian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/ocean.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/paraiso-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/paraiso-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/pojoaque.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/pojoaque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/purebasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/qtcreator_dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/qtcreator_light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/railscasts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/rainbow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/routeros.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/school-book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/school-book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/shades-of-purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/solarized-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/solarized-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/sunburst.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/tomorrow-night-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/tomorrow-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/vs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/vs2015.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/xcode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/xt256.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/css/highlight/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/js/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/static/default/js/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/snap_block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/741df2d8-3ac3-4245-a689-b8708f4ed472.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/741df2d8-3ac3-4245-a689-b8708f4ed472.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/blog/adminforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/blog/adminforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/blog/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/blog/adminx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/comment/commentforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/commentforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/comment/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/adminx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/comment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/comment/templatetags/comment_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/templatetags/comment_block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/comment/templatetags/comment_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/templatetags/block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/comment/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/comment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/comment/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/static/bootstrap/js/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/static/bootstrap/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/static/default/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/static/default/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/static/default/js/jquery-3.2.1.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/block.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_children.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_children.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_blog/user/userforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/user/userforms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/themes/default/templates/comment/result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/user/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_blog/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/web_blog/base_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/base_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_blog/web_blog/emailverification.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_blog/web_blog/emailverification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,42 +170,48 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html">
+        <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/edit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_blog/blog/adminx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_blog/comment/adminx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_blog/comment/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="400">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -106,23 +219,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/blog/views.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_blog/web_blog/base_admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="475">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/comment_comment">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_blog/blog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="101" column="15" lean-forward="true" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/blog.css">
+        <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+            <state relative-caret-position="-2650">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_blog/config/adminx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,10 +278,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -148,6 +294,8 @@
       <find>area</find>
       <find>open</find>
       <find>edit</find>
+      <find>get_list_queryset</find>
+      <find>formfield_for_dbfield</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,57 +304,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web_blog/apps/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/main_apps/comment/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/main_apps/user/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/main_apps/config/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/main_apps/blog_system/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/main_apps/blog/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/apps/blog/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/blog/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/user/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/config/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/comment/__init__.py" />
-        <option value="$PROJECT_DIR$/web_blog/blog_system/__init__.py" />
         <option value="$PROJECT_DIR$/web_blog/blog_system/urls.py" />
         <option value="$PROJECT_DIR$/web_blog/web_blog/settings/base.py" />
-        <option value="$PROJECT_DIR$/web_blog/comment/urls.py" />
         <option value="$PROJECT_DIR$/web_blog/web_blog/urls.py" />
         <option value="$PROJECT_DIR$/web_blog/comment/ValidationErrorTOJson.py" />
         <option value="$PROJECT_DIR$/web_blog/blog/models.py" />
         <option value="$PROJECT_DIR$/web_blog/config/models.py" />
         <option value="$PROJECT_DIR$/web_blog/blog_system/views.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/web_blog/blog/adminforms.py" />
         <option value="$PROJECT_DIR$/web_blog/static/default/css/index.css" />
         <option value="$PROJECT_DIR$/web_blog/blog/urls.py" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_comments.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_posts.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_category.html" />
-        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/register.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/edit_info.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/urse_info/base.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/urse_info/personal_info.html" />
-        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html" />
-        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html" />
         <option value="$PROJECT_DIR$/web_blog/static/default/css/login.css" />
         <option value="$PROJECT_DIR$/web_blog/static/default/css/user_info.css" />
         <option value="$PROJECT_DIR$/web_blog/user/userforms.py" />
-        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html" />
         <option value="$PROJECT_DIR$/web_blog/static/default/js/user_info.js" />
         <option value="$PROJECT_DIR$/web_blog/comment/templatetags/comment_block.py" />
         <option value="$PROJECT_DIR$/web_blog/comment/commentforms.py" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_children.html" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/comment/block.html" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/login.html" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html" />
+        <option value="$PROJECT_DIR$/web_blog/comment/models.py" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/comment/snap_block.html" />
+        <option value="$PROJECT_DIR$/web_blog/comment/templatetags/block.py" />
+        <option value="$PROJECT_DIR$/web_blog/comment/urls.py" />
+        <option value="$PROJECT_DIR$/web_blog/static/default/css/blog.css" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html" />
         <option value="$PROJECT_DIR$/web_blog/comment/views.py" />
-        <option value="$PROJECT_DIR$/web_blog/user/views.py" />
-        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/login.html" />
+        <option value="$PROJECT_DIR$/web_blog/static/default/js/detail.js" />
         <option value="$PROJECT_DIR$/web_blog/blog/views.py" />
-        <option value="$PROJECT_DIR$/web_blog/static/default/css/blog.css" />
+        <option value="$PROJECT_DIR$/web_blog/user/apps.py" />
+        <option value="$PROJECT_DIR$/web_blog/comment/signals.py" />
+        <option value="$PROJECT_DIR$/web_blog/comment/Notify.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/web_blog/web_blog/emailverification.py" />
+        <option value="$PROJECT_DIR$/web_blog/user/views.py" />
         <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog/base.html" />
-        <option value="$PROJECT_DIR$/web_blog/comment/models.py" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html" />
+        <option value="$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html" />
+        <option value="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/edit.py" />
+        <option value="$PROJECT_DIR$/web_blog/blog/adminforms.py" />
+        <option value="$PROJECT_DIR$/web_blog/blog/adminx.py" />
+        <option value="$PROJECT_DIR$/web_blog/comment/adminx.py" />
+        <option value="$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/apps.py" />
+        <option value="$PROJECT_DIR$/web_blog/web_blog/base_admin.py" />
       </list>
     </option>
   </component>
@@ -253,77 +401,49 @@
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xadmin2-2.0.1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xadmin2-2.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog_system" type="462c0819:PsiDirectoryNode" />
-              <item name="user_info" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xadmin2-2.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="xadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="web_blog" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="web_blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,19 +463,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\default\js" />
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\default\css" />
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\bootstrap\js" />
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\imgs" />
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\themes\default\templates\config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\default\css\extra_info" />
       <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\bootstrap\js" />
       <recent name="E:\py\PycharmProjects\web_blog\web_blog\themes\default\templates\blog_system\urse_info" />
       <recent name="E:\py\PycharmProjects\web_blog\web_blog" />
       <recent name="E:\py\PycharmProjects\web_blog\web_blog\apps\user" />
-      <recent name="C:\Users\Tsanh\.PyCharm2018.3\config\extensions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\bootstrap\js" />
-      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static\imgs" />
-      <recent name="E:\py\PycharmProjects\web_blog\web_blog\themes\default\templates\config" />
-      <recent name="E:\py\PycharmProjects\web_blog\web_blog\themes\default\templates\comment" />
-      <recent name="E:\py\PycharmProjects\web_blog\web_blog\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,7 +545,9 @@
       <workItem from="1564481612794" duration="10718000" />
       <workItem from="1564548885995" duration="683000" />
       <workItem from="1564549695792" duration="250000" />
-      <workItem from="1564569974055" duration="9491000" />
+      <workItem from="1564569974055" duration="9566000" />
+      <workItem from="1564624148979" duration="8784000" />
+      <workItem from="1564644085792" duration="16242000" />
     </task>
     <task id="LOCAL-00001" summary="初始化提交">
       <created>1563616118350</created>
@@ -490,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564495311059</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成资料修改与评论">
+      <created>1564581874002</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564581874002</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200239000" />
+    <option name="totallyTimeSpent" value="225340000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -507,11 +636,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1299682" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13155803" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32972136" />
@@ -520,7 +648,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972136" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49959415" weight="0.32964224" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49835932" visible="true" weight="0.33359134" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49835932" visible="true" weight="0.33359134" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50082034" side_tool="true" weight="0.32964224" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Console" order="11" sideWeight="0.49917966" weight="0.3366873" />
@@ -530,7 +658,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.28139904" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.28139904" />
     </layout>
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -570,213 +698,24 @@
     <MESSAGE value="完成主页" />
     <MESSAGE value="完成个人首页以及博客详情页" />
     <MESSAGE value="完成个人中心的个人资料模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成个人中心的个人资料模块" />
+    <MESSAGE value="完成资料修改与评论" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成资料修改与评论" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_blog/static/bootstrap/js/jquery-3.2.1.min.js">
+    <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/highlight/vs.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="1944" column="13" lean-forward="true" selection-start-line="1944" selection-start-column="13" selection-end-line="1944" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1975">
-          <caret line="8" column="71698" selection-start-line="8" selection-start-column="71698" selection-end-line="8" selection-end-column="71698" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/result.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/adminforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="102" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/comment/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/blog_post" />
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/core/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1464">
-          <caret line="98" column="38" lean-forward="true" selection-start-line="98" selection-start-column="38" selection-end-line="98" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/config/sidebar_comments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/xadmin_usersettings" />
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/django_admin_log" />
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/auth_group" />
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/auth_user_user_permissions" />
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/auth_user_groups" />
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/__init__.py">
+    <entry file="file://$PROJECT_DIR$/web_blog/static/default/js/highlight.pack.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/auth_group_permissions" />
-    <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/login.css">
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/bootstrap/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="120" selection-start-line="6" selection-start-column="120" selection-end-line="6" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/utils/formats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="483" column="73" lean-forward="true" selection-start-line="483" selection-start-column="73" selection-end-line="483" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/default/js/user_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/default/js/post_editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/user/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/user_info.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="176" column="20" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/user/userforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="100" column="68" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/comment/templatetags/comment_block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/user_userinfo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/comment_comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="611">
+          <caret line="78" column="89" selection-start-line="78" selection-start-column="89" selection-end-line="78" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -790,119 +729,383 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="113" column="57" lean-forward="true" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/comment/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/result.html" />
     <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_children.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/block.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+    <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/extra_info/CHANGES.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="636">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/personal_info.html">
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="26" column="144" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_blog/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="350">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#156#184#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/static/default/css/blog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        <state relative-caret-position="236">
+          <caret line="130" column="1" lean-forward="true" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/comment_snap">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/static/default/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/comment_block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/comment/snap_block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/templatetags/block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#164#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/static/default/js/user_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/user/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/signals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#157#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/Notify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#156#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/user_emailverification">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/user/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/emailverification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="475">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/user_info/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog_system/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templates/xadmin/forms/transfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="517" column="11" lean-forward="true" selection-start-line="517" selection-start-column="11" selection-end-line="517" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/themes/default/templates/blog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/sites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6964">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="496" column="27" selection-start-line="496" selection-start-column="27" selection-end-line="496" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/templatetags/xadmin_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/config/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2375">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-env/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="1274" column="8" selection-start-line="1274" selection-start-column="8" selection-end-line="1274" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2650">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/detail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2025">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/views/edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/blog/adminforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/extra_apps/xadmin2-2.0.1/xadmin/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="101" column="15" lean-forward="true" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://741df2d8-3ac3-4245-a689-b8708f4ed472/schema/main/table/comment_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/blog/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/comment/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_blog/comment/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        <state relative-caret-position="400">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_blog/web_blog/base_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

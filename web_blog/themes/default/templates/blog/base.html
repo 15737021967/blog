@@ -38,6 +38,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="{% url 'edit_info' %}">个人中心</a></li>
                                 <li><a href="{% url 'post:post-list' user.userinfo.name %}">我的博客</a></li>
+                                <li><a href="/xadmin/">管理博客</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="{% url 'logout' %}">注销</a></li>
                             </ul>
@@ -93,15 +94,11 @@
             </ul>
         </div>
         <!-- 博客列表 -->
-        <div class="col-md-8 post-item">
-            {% block main %}
-            {% endblock %}
-        </div>
-        <div class="col-md-1">
-                        <li class="list-group-item">
-                <p>今日推荐</p>
-            </li>
-        </div>
+        {% block main %}
+        {% endblock %}
+        <!-- 额外信息 -->
+        {% block extra_main %}
+        {% endblock %}
     </div>
     </div>
     <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>

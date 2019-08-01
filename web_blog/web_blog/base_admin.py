@@ -14,3 +14,12 @@ class BaseOwnerAdmin(object):
     def save_models(self):
         self.new_obj.owner = self.request.user
         return super(BaseOwnerAdmin, self).save_models()
+
+
+class BaseAuthorAdmin(object):
+
+    def get_list_queryset(self):
+        request = self.request
+        qs = super(BaseAuthorAdmin, self).get_list_queryset()
+        return qs.filter(reply_to_blog__owner=request.user)
+

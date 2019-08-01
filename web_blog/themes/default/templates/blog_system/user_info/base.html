@@ -34,6 +34,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="{% url 'edit_info' %}">个人中心</a></li>
                                 <li><a href="{% url 'post:post-list' user.userinfo.name %}">我的博客</a></li>
+                                <li><a href="/xadmin/">管理博客</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="{% url 'logout' %}">注销</a></li>
                             </ul>
