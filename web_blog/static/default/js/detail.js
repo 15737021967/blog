@@ -36,3 +36,19 @@ $('#snap-btn').click(function () {
 
     })
 })
+$('#submit').click(function () {
+    $.ajax({
+        url: '/comment/comment/',
+        type: 'post',
+        dataType: 'JSON',
+        data: $('#fm').serialize(),
+        success: function (rep) {
+            if (rep['succeed'] == true){
+                alert('评论成功')
+                window.location.reload(true)
+            }else{
+                alert(rep['errors'])
+            }
+        }
+    })
+})

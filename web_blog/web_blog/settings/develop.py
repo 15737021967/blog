@@ -1,6 +1,9 @@
 from .base import *  # N0QA
 
 
+INSTALLED_APPS += ('mdeditor', )
+
+
 LOGIN_URL = '/login/'
 
 STATIC_URL = '/static/'

@@ -43,8 +43,6 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'xadmin',
     'crispy_forms',
-    'ckeditor',
-    'ckeditor_uploader',
 
 ]
 

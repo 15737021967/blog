@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.db.models import Count
+from mdeditor.fields import MDTextField
 from blog_system.models import ProjectCategory
 import mistune
 # from django.utils.functional import cached_property
@@ -87,14 +88,13 @@ class Post(models.Model):
     uv = models.PositiveIntegerField(default=1, verbose_name="浏览量")
     title = models.CharField(max_length=255, verbose_name="标题")
     desc = models.CharField(max_length=1024, blank=True, verbose_name="摘要")
-    content = models.TextField(verbose_name="正文", help_text="正文必须为 MarkDown 格式")
+    content = MDTextField(verbose_name="正文")
     status = models.PositiveIntegerField(default=STATUS_NORMAL, choices=STATUS_ITEMS, verbose_name="状态")
     category = models.ForeignKey(Category, verbose_name="个人分类", on_delete=models.SET_NULL, null=True)
     pro_category = models.ForeignKey(ProjectCategory, verbose_name="系统分类", on_delete=models.SET_NULL, null=True)
     tag = models.ManyToManyField(Tag, verbose_name="标签")
     owner = models.ForeignKey(User, verbose_name="作者", on_delete=models.SET_NULL, null=True)
     content_html = models.TextField(verbose_name="正文html代码", blank=True, editable=False)
-    is_md = models.BooleanField(default=False, verbose_name="markdown语法")
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
     objects = models.Manager()
@@ -142,10 +142,7 @@ class Post(models.Model):
         return cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj).order_by('-uv')
 
     def save(self, *args, **kwargs):
-        if self.is_md:
-            self.content_html = mistune.markdown(self.content)
-        else:
-            self.content_html = self.content
+        self.content_html = mistune.markdown(self.content)
         super(Post, self).save(*args, **kwargs)
 
     # @cached_property
