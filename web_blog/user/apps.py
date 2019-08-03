@@ -6,4 +6,4 @@ class UserConfig(AppConfig):
     verbose_name = "个人信息"
 
     def ready(self):
-        import comment.signals
+        import user.signals

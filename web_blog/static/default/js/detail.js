@@ -18,7 +18,10 @@ $('#snap-btn').click(function () {
         url: '/comment/snap/',
         type: 'post',
         dataType: 'JSON',
-        data: {'post_id': $(this).attr('name'), 'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val()},
+        data: {
+            'post_id': $(this).attr('name'),
+            'csrfmiddlewaretoken': $("[name='csrfmiddlewaretoken']").val()
+        },
         success: function(rep){
 
             if (rep == true){

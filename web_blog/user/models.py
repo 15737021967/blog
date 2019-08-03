@@ -26,8 +26,8 @@ class EmailVerification(models.Model):
     STATUS_REGISTER = 0
     STATUS_FORGET = 1
     STATUS_ITEM = (
+        (STATUS_REGISTER, '邮箱注册'),
         (STATUS_FORGET, '忘记密码'),
-        (STATUS_REGISTER, '邮箱注册')
     )
     account = models.EmailField(verbose_name="账号")
     status = models.PositiveIntegerField(choices=STATUS_ITEM, verbose_name="状态")

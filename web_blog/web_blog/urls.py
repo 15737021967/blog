@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
-from user.views import index, Register, Active, Login, EditUserInfo, Logout
+from user.views import index, Register, Active, Login, EditUserInfo, Logout, ForgetPassword
 import xadmin
 
 urlpatterns = [
@@ -27,6 +27,7 @@ urlpatterns = [
     path(r'active/<str:code>', Active.as_view(), name="active"),
     path(r'login/', Login.as_view(), name="login"),
     path(r'logout/', Logout.as_view(), name="logout"),
+    path(r'forget-password/', ForgetPassword.as_view(), name="forget-password"),
     path(r'edit_info/', EditUserInfo.as_view(), name="edit_info"),
     path(r'<str:auth>/', include('blog.urls')),
     path(r'nav/', include('blog_system.urls')),

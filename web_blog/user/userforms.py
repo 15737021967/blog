@@ -94,13 +94,6 @@ class EditInfo(forms.ModelForm):
         label='简介'
     )
 
-    # def __init__(self, instance=None, initial=None, **kwargs):
-    #     initial = initial or {}
-    #     if instance:
-    #         if instance.birthday:
-    #             initial['birthday'] = instance.birthday.strftime("%Y-%m-%d")
-    #     super().__init__(instance=instance, initial=initial, **kwargs)
-
     class Meta:
         model = UserInfo
         fields = (

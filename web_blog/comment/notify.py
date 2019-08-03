@@ -3,7 +3,7 @@
 # @Time : 2019/8/1 15:28
 # @Author : Tan 
 # @Email : 1531391246@qq.com
-# @File : Notify.py
+# @File : notify.py
 # @Software: PyCharm
 from django.core.mail import send_mail
 from comment.models import Comment

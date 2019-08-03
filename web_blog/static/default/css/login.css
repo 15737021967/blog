@@ -27,7 +27,7 @@ li{
     list-style-type: none;
 }
 .input-card{
-    width: 254px;
+    width: 400px;
     height: 32px;
 }
 .input-text{
@@ -35,6 +35,18 @@ li{
     height: 14px;
     padding: 8px 25px 8px 8px;
     margin-left: 100px;
+}
+.validate{
+    width: 140px;
+    height: 14px;
+    padding: 8px 25px 8px 8px;
+    margin-left: 100px;
+}
+.validate-btn{
+    width: 74px;
+    height: 14px;
+    padding: 0px;
+    font-size: 10px;
 }
 .forget-password{
     margin-left: 260px;

@@ -6,11 +6,10 @@ from django.shortcuts import render, get_object_or_404, HttpResponse, redirect, 
 from django.views.generic import View
 from blog_system.models import ProjectCategory
 from user.models import EmailVerification, UserInfo
-from web_blog.emailverification import range_code, email_message
+from user.emailverification import range_code
 from user.userforms import UserForm, LoginForms, EditInfo
 from blog.models import Post
 import json
-# import json
 
 
 def index(request):
@@ -35,10 +34,6 @@ class Register(View):
             name = user_form.cleaned_data.get('name')
             user = User.objects.create_user(account, account, pwd, is_active=False)
             UserInfo.objects.create(owner=user, name=name, nickname=name)
-            code = range_code()
-            EmailVerification.objects.create(account=account, status=EmailVerification.STATUS_REGISTER, code=code)
-            message = email_message(code)
-            send_mail('账号激活', message, '1531391246@qq.com', [account, ])
             print('create successful!')
 
         else:
@@ -125,3 +120,35 @@ class EditUserInfo(LoginRequiredMixin, View):
         else:
             rep['msg'] = info.errors.as_json()
         return HttpResponse(json.dumps(rep))
+
+
+class ForgetPassword(View):
+    def get(self, request):
+        return render(request, 'blog_system/forget_password.html', context={})
+
+    def post(self, request):
+        status = request.POST.get('status')
+        if status == '1':
+            account = request.POST.get('account')
+            code = range_code(5)
+            EmailVerification.objects.filter(status=1, account=account).delete()
+            EmailVerification.objects.create(status=1, account=account, code=code)
+            return HttpResponse(json.dumps('已经将验证码发至邮箱'))
+        elif status == '2':
+            account = request.POST.get('account')
+            password = request.POST.get('password')
+            confirm_password = request.POST.get('confirm_password')
+            code = request.POST.get('code')
+            email_info = EmailVerification.objects.filter(account=account, code=code)
+            if not all([account, password, confirm_password, code]):
+                return HttpResponse(json.dumps('请填写完整'))
+            if confirm_password != password:
+                return HttpResponse(json.dumps('请输入相同的密码'))
+            if not email_info.exists():
+                return HttpResponse(json.dumps('请出入正确的验证码'))
+            else:
+                email_info.delete()
+                user = User.objects.get(username=account)
+                user.set_password(password)
+                user.save()
+                return HttpResponse(json.dumps('密码重置成功'))
