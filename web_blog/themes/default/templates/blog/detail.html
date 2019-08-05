@@ -8,6 +8,13 @@
 {% block main %}
 <div class="col-md-8 post-item">
     <ul class="list-group">
+        <li class="list-group-item" style="margin-bottom: 5px">
+            <ol class="breadcrumb" style="margin: 0px">
+                <li><a href="{% url 'post:post-list' auth  %}">Home</a></li>
+                <li><a href="{% url 'post:category-list' auth post.category.id %}">{{ post.category.name }}</a></li>
+                <li class="active">{{ post.title }}</li>
+            </ol>
+        </li>
         <li class="list-group-item">
             <h1>{{ post.title }}</h1>
             <div class="article-info">
@@ -15,7 +22,6 @@
                 <a href="{% url 'post:post-list' post.owner.userinfo.name %}" class="follow-name">{{ post.owner.userinfo.name }}</a>
                 <span>阅读数 {{ post.uv }}</span>
             </div>
-
         </li>
         <li class="list-group-item">
             <article>

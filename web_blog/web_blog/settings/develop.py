@@ -3,7 +3,6 @@ from .base import *  # N0QA
 
 INSTALLED_APPS += ('mdeditor', )
 
-
 LOGIN_URL = '/login/'
 
 STATIC_URL = '/static/'
@@ -16,18 +15,6 @@ STATICFILES_DIRS = (
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-
-CKEDITOR_UPLOAD_PATH = "article_images"
-# 设置编辑框的参数
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'full',
-        'height': 300,
-        'width': 800,
-        'tabSpaces': 4,
-        'extraPlugins': 'codesnippet',  # 配置代码插件
-    }
-}
 
 # 文件存储方式
 DEFAULT_FILE_STORAGE = 'web_blog.storage.WatermarkStorage'

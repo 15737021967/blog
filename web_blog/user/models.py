@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class UserInfo(models.Model):
-    owner = models.OneToOneField(User, on_delete=models.SET_NULL, null=True, verbose_name="账号")
+    owner = models.OneToOneField(User, on_delete=models.CASCADE, null=True, verbose_name="账号")
     name = models.CharField(max_length=50, verbose_name="用户名", unique=True)
     nickname = models.CharField(max_length=50, verbose_name="昵称", null=True)
     sex = models.PositiveSmallIntegerField(default=2, choices=((0, '男'), (1, '女'), (2, '未知')), verbose_name="性别",

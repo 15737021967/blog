@@ -2,9 +2,11 @@ from datetime import date
 from django.core.cache import cache
 from django.contrib.auth.models import User
 from django.shortcuts import get_object_or_404
+from django.utils.decorators import method_decorator
 from django.views.generic import ListView, DetailView
+from django.views.decorators.cache import cache_page
 from django.db.models import F
-from .models import Post, Category, Tag
+from .models import Post, Category
 from config.models import SideBar
 from comment.models import Snap
 
@@ -20,7 +22,6 @@ class CommonViewMixin:
             'sidebars': SideBar.get_all(auth_obj),
             'auth': auth
         })
-        context.update(Category.get_navs(auth_obj))
         return context
 
 
@@ -31,6 +32,10 @@ class IndexView(CommonViewMixin, ListView):
         queryset = Post.latest_posts(auth_obj)
         return queryset
 
+    @method_decorator(cache_page(60 * 1))
+    def get(self, request, *args, **kwargs):
+        return super(IndexView, self).get(request, *args, **kwargs)
+
     paginate_by = 10
     context_object_name = 'post_list'
     template_name = 'blog/list.html'
@@ -40,32 +45,21 @@ class CategoryView(IndexView):
     """根据分类查看文章"""
     def get_context_data(self, **kwargs):
         context = super(CategoryView, self).get_context_data(**kwargs)
-        auth = self.kwargs.get('auth')
-        auth_obj = get_object_or_404(User, userinfo__name=auth)
         category_id = self.kwargs.get('category_id')
+        category = get_object_or_404(Category, id=category_id)
+        context.update({
+            'category': category,
+        })
         return context
+
+    @method_decorator(cache_page(60 * 1))
+    def get(self, request, *args, **kwargs):
+        return super(CategoryView, self).get(request, *args, **kwargs)
 
     def get_queryset(self):
         queryset = super(CategoryView, self).get_queryset()
         category_id = self.kwargs.get('category_id')
         return queryset.filter(category_id=category_id)
-
-
-# class TagView(IndexView):
-#     """根据标签查看文章"""
-#     def get_context_data(self, **kwargs):
-#         context = super(TagView, self).get_context_data(**kwargs)
-#         tag_id = self.kwargs.get('tag_id')
-#         tag = get_object_or_404(Tag, pk=tag_id)
-#         context.update({
-#             'tag': tag,
-#         })
-#         return context
-#
-#     def get_queryset(self):
-#         queryset = super(TagView, self).get_queryset()
-#         tag_id = self.kwargs.get('tag_id')
-#         return queryset.filter(tag__id=tag_id)
 
 
 class PostDetailView(CommonViewMixin, DetailView):
@@ -92,6 +86,7 @@ class PostDetailView(CommonViewMixin, DetailView):
     context_object_name = 'post'
     pk_url_kwarg = 'post_id'
 
+    @method_decorator(cache_page(60 * 1))
     def get(self, request, *args, **kwargs):
         response = super().get(request, *args, **kwargs)
         self.handle_visited()
@@ -106,4 +101,3 @@ class PostDetailView(CommonViewMixin, DetailView):
             cache.set(uv_key, 1, 60*60*24)
         if increase_uv:
             Post.objects.filter(pk=self.object.id).update(uv=F('uv')+1)
-

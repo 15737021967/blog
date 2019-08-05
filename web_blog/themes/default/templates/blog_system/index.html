@@ -74,6 +74,29 @@
                         <span>阅读量：{{ post.uv }}</span>
                     </li>
                 {% endfor %}
+                {% if page_obj %}
+                    <li class="list-group-item text-center" style="margin-top: 5px">
+                    <nav aria-label="Page navigation" style="height: 34px">
+                    <ul class="pagination" style="margin: 0px">
+                    {% if page_obj.has_previous %}
+                        <li>
+                        <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                    {% endif %}
+                        <li><a href="#">Page{{ page_obj.number }} of {{ paginator.num_pages }}</a></li>
+                    {% if page_obj.has_next %}
+                        <li>
+                        <a href="?page={{ page_obj.next_page_number }}"  aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    {% endif %}
+                    </ul>
+                    </nav>
+                    </li>
+                {% endif %}
             </ul>
         </div>
         <div class="col-md-3 area">

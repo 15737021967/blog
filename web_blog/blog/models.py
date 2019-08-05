@@ -31,23 +31,6 @@ class Category(models.Model):
         return self.name
 
     @classmethod
-    def get_navs(cls, auth_obj):
-        """是获取设为导航和正常的分类"""
-        categories = cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj)
-        nav_categories = []
-        normal_categories = []
-        for cate in categories:
-            if cate.is_nav:
-                nav_categories.append(cate)
-            else:
-                normal_categories.append(cate)
-
-        return {
-            'navs': nav_categories,
-            'categories': normal_categories,
-        }
-
-    @classmethod
     def get_categories(cls, auth_obj):
         return cls.objects.filter(status=cls.STATUS_NORMAL, owner=auth_obj).annotate(post_count=Count('post'))
 

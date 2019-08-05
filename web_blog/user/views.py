@@ -1,27 +1,13 @@
-from django.core.mail import send_mail
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import User
 from django.shortcuts import render, get_object_or_404, HttpResponse, redirect, reverse
 from django.views.generic import View
-from blog_system.models import ProjectCategory
 from user.models import EmailVerification, UserInfo
 from user.emailverification import range_code
 from user.userforms import UserForm, LoginForms, EditInfo
-from blog.models import Post
+from user.add_permissions import add_permissions
 import json
-
-
-def index(request):
-    """网站的主页"""
-    pro_category_list = ProjectCategory.get_pro_category()
-    post_list = Post.objects.filter(pro_category=1)
-    pro_category = get_object_or_404(ProjectCategory, id=1)
-    return render(request, 'blog_system/index.html',
-                  context={
-                      'pro_category_list': pro_category_list, 'post_list': post_list, 'pro_category': pro_category
-                    }
-                  )
 
 
 class Register(View):
@@ -34,12 +20,13 @@ class Register(View):
             name = user_form.cleaned_data.get('name')
             user = User.objects.create_user(account, account, pwd, is_active=False)
             UserInfo.objects.create(owner=user, name=name, nickname=name)
-            print('create successful!')
+            code = range_code()
+            EmailVerification.objects.create(code=code, account=account, status=0)
 
         else:
             print(user_form.errors.as_data())
             return render(request, 'blog_system/register.html', context={'user': user_form})
-        return render(request, 'blog_system/register.html', context={'user': UserForm()})
+        return render(request, 'blog_system/login.html', context={'login_form': LoginForms()})
 
     def get(self, request):
         user_form = UserForm()
@@ -74,8 +61,10 @@ class Active(View):
 
     def get(self, request, code):
         email_verification = get_object_or_404(EmailVerification, code=code)
-        User.objects.filter(username=email_verification.account).update(is_active=True, is_staff=True)
+        user = User.objects.filter(username=email_verification.account)
+        user.update(is_active=True, is_staff=True)
         email_verification.delete()
+        add_permissions(user[0])
         return HttpResponse("你已激活账号")
 
 

@@ -1,11 +1,15 @@
 {% extends "blog/base.html" %}
+{% block title %}{{ auth }}{% endblock %}
 {% block main %}
 <div class="col-md-8 post-item">
     <ul class="list-group">
-        <li class="list-group-item">
-            {% for post in post_list %}
-                {{ post.title }}{{ post.category.name }}
-            {% endfor %}
+        <li class="list-group-item" style="margin-bottom: 5px">
+            <ol class="breadcrumb" style="margin: 0px">
+                <li><a href="{% url 'post:post-list' auth  %}">Home</a></li>
+                {% if category %}
+                    <li class="active">{{ category.name }}</li>
+                {% endif %}
+            </ol>
         </li>
         {% for post in post_list %}
             <li class="list-group-item article">
@@ -16,16 +20,30 @@
                 <p>阅读量：{{ post.uv }}</p>
             </li>
         {% endfor %}
+        {% if page_obj %}
+            <li class="list-group-item text-center" style="margin-top: 5px">
+            <nav aria-label="Page navigation" style="height: 34px">
+            <ul class="pagination" style="margin: 0px">
+            {% if page_obj.has_previous %}
+                <li>
+                <a href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+            {% endif %}
+                <li><a href="#">Page{{ page_obj.number }} of {{ paginator.num_pages }}</a></li>
+            {% if page_obj.has_next %}
+                <li>
+                <a href="?page={{ page_obj.next_page_number }}"  aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            {% endif %}
+            </ul>
+            </nav>
+            </li>
+        {% endif %}
     </ul>
-    {% if page_obj %}
-        {% if page_obj.has_previous %}
-            <a href="?page={{ page_obj.previous_page_number }}">上一页</a>
-        {% endif %}
-            Page{{ page_obj.number }} of {{ paginator.num_pages }}.
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">下一页</a>
-        {% endif %}
-    {% endif %}
 </div>
 {% endblock %}
 {% block extra_main %}

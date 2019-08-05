@@ -17,11 +17,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, re_path, include
-from user.views import index, Register, Active, Login, EditUserInfo, Logout, ForgetPassword
+from user.views import Register, Active, Login, EditUserInfo, Logout, ForgetPassword
+from blog_system.views import Index
 import xadmin
 
 urlpatterns = [
-    re_path(r'^$', index, name="index"),
+    re_path(r'^$', Index.as_view(), name="index"),
     path(r'admin/', admin.site.urls),
     path(r'xadmin/', xadmin.site.urls, name="xadmin"),
     path(r'register', Register.as_view(), name="register"),
