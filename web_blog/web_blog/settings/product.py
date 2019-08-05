@@ -6,6 +6,7 @@
 # @File : product.py
 # @Software: PyCharm
 from .base import *  # NOQA
+import os
 
 DEBUG = False
 
@@ -30,13 +31,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_FILE_STORAGE = 'web_blog.storage.WatermarkStorage'
 
 # 数据库配置
+DATABASES_PASSWORD = os.environ['DATABASES_PASSWORD']
 DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'web_blog',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': DATABASES_PASSWORD,
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'CONN_MAX_AGE': 60,
@@ -62,11 +64,11 @@ CACHES = {
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = "1531391246@qq.com"
-EMAIL_HOST_PASSWORD = "gnewkzxalhlqbaba"
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_SUBJECT_PREFIX = "[django博客]"
 SERVER_EMAIL = "1531391246@qq.com"
 DEFAULT_FROM_EMAIL = "1531391246@qq.com"
-ADMINS = MANAGERS = [('1531391246', '1531391246@qq.com'), ]
+ADMINS = MANAGERS = [('admin', '1531391246@qq.com'), ]
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
@@ -113,3 +115,4 @@ LOGGING = {
         },
     },
 }
+"""gnewkzxalhlqbaba"""
