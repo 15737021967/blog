@@ -36,4 +36,5 @@ urlpatterns = [
     path(r'comment/', include('comment.urls')),
     path(r'mdeditor/', include('mdeditor.urls')),
 
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
