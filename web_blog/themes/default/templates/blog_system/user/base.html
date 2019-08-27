@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'default/css/login.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <div class="container">
+        <div class="row login">
+            <div class="col-md-5 tu">
+                <img src="{% static 'imgs/SC01C14.jpg' %}" class="img-rounded picture">
+            </div>
+            {% block main_info %}{% endblock %}
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    {% block extra_script %}
+    {% endblock %}
+</body>
+</html>

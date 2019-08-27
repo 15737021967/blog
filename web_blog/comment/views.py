@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, HttpResponse, redirect
+from django.shortcuts import get_object_or_404, HttpResponse
 from django.views.generic import View
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin

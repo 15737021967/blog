@@ -67,4 +67,4 @@ def autodiscover():
             if module_has_submodule(mod, 'adminx'):
                 raise
 
-default_app_config = 'xadmin.apps.XAdminConfig'
+default_app_config = 'xadmin.main_apps.XAdminConfig'

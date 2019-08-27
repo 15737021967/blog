@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.template.loader import render_to_string
+# from main_apps.blog.models import Post
 from blog.models import Post
 # Create your models here.
 

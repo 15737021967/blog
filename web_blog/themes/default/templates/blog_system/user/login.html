@@ -1,0 +1,41 @@
+{% extends "blog_system/user/base.html" %}
+{% load static %}
+{% block title %}登陆页面{% endblock %}
+{% block main_info %}
+    <div class="col-md-5 login-form">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="form-location text-center">
+                    账号登陆
+                </div>
+                <div>
+                    <form action="{% url 'login' %}" method="post">
+                        {% for field in login_form %}
+                            <div class="input-card">{{ field }}</div>
+                        {% endfor %}
+                        {{ login_form.password.errors }}
+                        <a href="{% url 'forget-password' %}" class="forget-password">忘记密码</a>
+                        <a href="{% url 'register' %}" class="forget-password">注册账号</a>
+                        <input type="text" class="hidden" name="next" value="{{ next }}">
+                        <div class="btn-submit">
+                            <button class="btn btn-info btn-block" type="submit">登陆</button>
+                        </div>
+                        {% csrf_token %}
+                    </form>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <p>欢迎使用：</p>
+                <p>使用须知：</p>
+                <p>1、测试阶段</p>
+                <p>2、欢迎交流：联系方式QQ:1531391246</p>
+                <p>系统通知：</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
+    <script type="text/javascript" src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+</body>
+</html>

@@ -1,110 +1,47 @@
+{% extends "base_page/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %}-PDBG博客</title>
-    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+{% block extra_title %}-PDBG博客{% endblock %}
+{% block extra_head %}
     <link rel="stylesheet" href="{% static 'default/css/blog.css' %}">
-    {% block extra_head %}
-    {% endblock %}
-</head>
-<body style="background-color: whitesmoke">
-       <nav class="navbar navbar-default head_area" style="background-color: white">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <ul class="nav navbar-nav">
-                    <li><a class="navbar-brand" href="{% url 'index' %}">首页</a></li>
-                </ul>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">博客<span class="sr-only">(current)</span></a></li>
-                </ul>
-                <form class="navbar-form navbar-left form-inline">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+{% endblock %}
+{% block sidebars %}
+    <!-- 侧边栏 -->
+    <div class="col-md-3 post-item">
+        <ul class="list-group">
+            <li class="list-group-item info-block">
+                <div class="profile-intro d-flex">
+                    <div class="avatar-box">
+                        <img src="{% static 'imgs/SC01C14.jpg' %}" alt="" style="height: 48px;width: 48px;margin-top: 16px" class="img-circle" alt="">
                     </div>
-                    <button type="submit" class="btn btn-default">搜索</button>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    {% if user.is_authenticated %}
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url 'edit_info' %}">个人中心</a></li>
-                                <li><a href="{% url 'post:post-list' user.userinfo.name %}">我的博客</a></li>
-                                <li><a href="/xadmin/">管理博客</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="{% url 'logout' %}">注销</a></li>
-                            </ul>
-                        </li>
-                    {% else %}
-                        <li><a href="{% url 'login' %}">登陆</a></li>
-                        <li><a href="{% url 'register' %}">注册</a></li>
-                    {% endif %}
-
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <div class="container">
-    <div class="row">
-        <!-- 侧边栏 -->
-        <div class="col-md-3 post-item">
-            <ul class="list-group">
-                <li class="list-group-item info-block">
-                    <div class="profile-intro d-flex">
-                        <div class="avatar-box">
-                            <img src="{% static 'imgs/SC01C14.jpg' %}" alt="" style="height: 48px;width: 48px;margin-top: 16px" class="img-circle" alt="">
-                        </div>
-                        <div class="auth-name">
-                            <p class="p-name">{{ auth }}</p>
-                        </div>
+                    <div class="auth-name">
+                        <p class="p-name">{{ auth }}</p>
                     </div>
-                    <div class="data-info">
-                        <dl class="text-center">
-                            <dt><a href="#" class="a-color">原创</a></dt>
-                            <dd><span class="count">126</span></dd>
-                        </dl>
-                        <dl class="text-center">
-                            <dt><a href="#" class="a-color">粉丝</a></dt>
-                            <dd><span class="count">15</span></dd>
-                        </dl>
-                         <dl class="text-center">
-                            <dt><a href="#" class="a-color">喜欢</a></dt>
-                            <dd><span class="count">20</span></dd>
-                        </dl>
-                          <dl class="text-center">
-                            <dt><a href="#" class="a-color">点赞</a></dt>
-                            <dd><span class="count">16</span></dd>
-                        </dl>
-                    </div>
+                </div>
+                <div class="data-info">
+                    <dl class="text-center">
+                        <dt><a href="#" class="a-color">原创</a></dt>
+                        <dd><span class="count">126</span></dd>
+                    </dl>
+                    <dl class="text-center">
+                        <dt><a href="#" class="a-color">粉丝</a></dt>
+                        <dd><span class="count">15</span></dd>
+                    </dl>
+                    <dl class="text-center">
+                        <dt><a href="#" class="a-color">喜欢</a></dt>
+                        <dd><span class="count">20</span></dd>
+                    </dl>
+                    <dl class="text-center">
+                        <dt><a href="#" class="a-color">点赞</a></dt>
+                        <dd><span class="count">16</span></dd>
+                    </dl>
+                </div>
+            </li>
+            {% for sidebar in sidebars %}
+                <li class="list-group-item area" id="pro_cate{{ cate.id }}">
+                    <h3 class="aside-title">{{ sidebar.title }}</h3>
+                    <div class="aside-content">{{ sidebar.content_html }}</div>
                 </li>
-                {% for sidebar in sidebars %}
-                    <li class="list-group-item area" id="pro_cate{{ cate.id }}">
-                            <h3 class="aside-title">{{ sidebar.title }}</h3>
-                            <div class="aside-content">{{ sidebar.content_html }}</div>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <!-- 博客列表 -->
-        {% block main %}
-        {% endblock %}
-        <!-- 额外信息 -->
-        {% block extra_main %}
-        {% endblock %}
+            {% endfor %}
+        </ul>
     </div>
-    </div>
-    <script src="{% static 'bootstrap/js/jquery-3.2.1.min.js' %}"></script>
-    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-    {% block extra_script %}
-    
-    {% endblock %}
-</body>
-</html>
+{% endblock %}

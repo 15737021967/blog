@@ -1,0 +1,36 @@
+{% extends "blog_system/user/base.html" %}
+{% load static %}
+{% block title %}注册页面{% endblock %}
+{% block main_info %}
+    <div class="col-md-5 login-form">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="form-location text-center">
+                    账号注册
+                </div>
+                <div>
+                    <form action="{% url 'register' %}" method="post">
+                        {% for field in user %}
+                            <div class="input-card">
+                                {{ field }}
+                                {{ field.errors }}
+                            </div>
+                        {% endfor %}
+                        <a href="{% url 'login' %}" class="login-page">已有账号，去登陆</a>
+                        <input type="text" class="hidden" name="next" value="{{ next }}">
+                        <div class="btn-submit">
+                            <button class="btn btn-info btn-block" type="submit">提交</button>
+                        </div>
+                        {% csrf_token %}
+                    </form>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <p>欢迎使用：</p>
+                <p>使用须知：</p>
+                <p>欢迎交流：联系方式QQ:1531391246</p>
+                <p>系统通知：</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

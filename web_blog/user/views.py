@@ -25,12 +25,12 @@ class Register(View):
 
         else:
             print(user_form.errors.as_data())
-            return render(request, 'blog_system/register.html', context={'user': user_form})
-        return render(request, 'blog_system/login.html', context={'login_form': LoginForms()})
+            return render(request, 'blog_system/user/register.html', context={'user': user_form})
+        return HttpResponse(json.dumps('请进入邮箱激活账号'))
 
     def get(self, request):
         user_form = UserForm()
-        return render(request, 'blog_system/register.html', context={'user': user_form})
+        return render(request, 'blog_system/user/register.html', context={'user': user_form})
 
 
 class Login(View):
@@ -38,7 +38,7 @@ class Login(View):
     def get(self, request):
         next_url = request.GET.get('next', '')
         print(next_url)
-        return render(request, 'blog_system/login.html', context={'login_form': LoginForms(), 'next': next_url})
+        return render(request, 'blog_system/user/login.html', context={'login_form': LoginForms(), 'next': next_url})
 
     def post(self, request):
         login_form = LoginForms(request.POST)
@@ -52,7 +52,7 @@ class Login(View):
             return redirect(reverse("index"))
         else:
             print(login_form.errors.as_data())
-            return render(request, 'blog_system/login.html', context={'login_form': login_form})
+            return render(request, 'blog_system/user/login.html', context={'login_form': login_form})
 
 
 class Active(View):

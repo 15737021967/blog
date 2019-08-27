@@ -14,7 +14,7 @@ import os
 import sys
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'main_apps'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'config.apps.ConfigConfig',
     'comment.apps.CommentConfig',
-    'polls.apps.PollsConfig',
     'blog_system.apps.BlogsystemConfig',
     'user.apps.UserConfig',
     'xadmin',
