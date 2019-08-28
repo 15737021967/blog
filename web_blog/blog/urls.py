@@ -16,4 +16,5 @@ urlpatterns = [
     path(r'article/<int:post_id>/', views.PostDetailView.as_view(), name='post-detail'),
     path(r'category/<int:category_id>/', views.CategoryView.as_view(), name='category-list'),
 
+
 ]

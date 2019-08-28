@@ -12,7 +12,7 @@ from blog_system.models import ProjectCategory
 class IndexViewMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        pro_category_id = self.kwargs.get('pro_category_id') or -1
+        pro_category_id = self.kwargs.get('pro_category_id', -1)
         if pro_category_id == -1:
             pro_category = get_object_or_404(ProjectCategory, name="推荐")
         else:
@@ -27,7 +27,7 @@ class IndexViewMixin:
 class Index(IndexViewMixin, ListView):
 
     def get_queryset(self):
-        pro_category_id = self.kwargs.get('pro_category_id') or -1
+        pro_category_id = self.kwargs.get('pro_category_id', -1)
         if pro_category_id == -1:
             queryset = Post.objects.all().order_by('-created_time')[:100]
         else:

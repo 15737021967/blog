@@ -19,10 +19,19 @@ from django.contrib import admin
 from django.urls import path, re_path, include
 from user.views import Register, Active, Login, EditUserInfo, Logout, ForgetPassword
 from blog_system.views import Index
+from rest_framework.routers import DefaultRouter
+from blog.apis import PostViewSet, CategoryViewSet
 import xadmin
+
+
+router = DefaultRouter()
+router.register(r'post', PostViewSet, base_name='api-post')
+router.register(r'category', CategoryViewSet, base_name='api-category')
+
 
 urlpatterns = [
     re_path(r'^$', Index.as_view(), name="index"),
+    path(r'api/', include(router.urls)),
     path(r'admin/', admin.site.urls),
     path(r'xadmin/', xadmin.site.urls, name="xadmin"),
     path(r'register', Register.as_view(), name="register"),

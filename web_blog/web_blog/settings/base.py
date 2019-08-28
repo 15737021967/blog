@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'xadmin',
     'crispy_forms',
-
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

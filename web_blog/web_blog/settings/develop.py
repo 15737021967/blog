@@ -20,10 +20,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_FILE_STORAGE = 'web_blog.storage.WatermarkStorage'
 
 # #接口的分页设置
-# REST_FRAMEWORK = {
-#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-#     'PAGE_SIZE': 2,
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 2,
+}
 
 DEBUG = True
 
