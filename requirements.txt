@@ -4,6 +4,6 @@ xadmin2==2.0.1
 django-ckeditor==5.7.1
 django-mdeditor==0.1.16
 django-redis==4.10.0
-Pillow==6.1.0
+Pillow==6.2.0
 djangorestframework==3.10.2
 pyjwt==1.7.1
