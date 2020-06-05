@@ -1,4 +1,4 @@
-django==2.2.3
+django==2.2.13
 mistune==0.8.4
 xadmin2==2.0.1
 django-ckeditor==5.7.1
